@@ -1,5 +1,7 @@
 source "https://rubygems.org"
 
+gem 'ed25519', '>= 1.2', '< 2.0'
+gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
 gem "rails", "6.0.6.1"
 
 gem "acts-as-taggable-on", "~> 9.0.1"

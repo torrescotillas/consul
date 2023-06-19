@@ -58,6 +58,12 @@ body {
 
   > .wrapper {
     flex-grow: 1;
+    
+    @include breakpoint($global-width) {
+      margin-left: calc(#{$full-width-margin});
+      margin-right: calc(#{$full-width-margin});
+    }
+  
   }
 }
 
@@ -2115,10 +2121,6 @@ table {
     background: $highlight;
     margin-top: rem-calc(-48);
 
-    @include breakpoint($global-width) {
-      margin-left: calc(#{$full-width-margin});
-      margin-right: calc(#{$full-width-margin});
-    }
   }
 
   .cards-container {
