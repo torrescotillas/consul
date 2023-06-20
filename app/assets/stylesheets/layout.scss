@@ -58,12 +58,6 @@ body {
 
   > .wrapper {
     flex-grow: 1;
-    
-    @include breakpoint($global-width) {
-      margin-left: calc(#{$full-width-margin});
-      margin-right: calc(#{$full-width-margin});
-    }
-  
   }
 }
 
@@ -691,6 +685,67 @@ body > header,
 
 // 03. Footer
 // ----------
+
+footer {
+  .logo {
+    color: inherit;
+  }
+
+  .logo a {
+    font-family: "Lato" !important;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-size: $small-font-size;
+
+    &.info a {
+      text-decoration: underline;
+    }
+  }
+
+  a,
+  a:active,
+  a:focus {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover {
+      color: $text-medium;
+    }
+  }
+
+  .footer-sections {
+    padding-left: 0;
+  }
+
+  .title {
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.footer {
+  @include background-with-text-contrast($footer, footer);
+  clear: both;
+  margin-top: $line-height * 2;
+  padding-bottom: $line-height;
+  padding-top: $line-height;
+
+  .public & {
+    @include full-width-background;
+  }
+}
+
+.subfooter {
+  border-top: 1px solid $text-light;
+  font-size: $small-font-size;
+  padding-top: $line-height / 2;
+}
 
 // 04. Tags
 // --------
@@ -2121,6 +2176,10 @@ table {
     background: $highlight;
     margin-top: rem-calc(-48);
 
+    @include breakpoint($global-width) {
+      margin-left: calc(#{$full-width-margin});
+      margin-right: calc(#{$full-width-margin});
+    }
   }
 
   .cards-container {

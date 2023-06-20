@@ -2,7 +2,7 @@ class Widget::Feed < ApplicationRecord
   KINDS = %w[proposals debates processes].freeze
 
   def active?
-    setting.value.present?
+    setting.present? && setting.value.present?
   end
 
   def setting
