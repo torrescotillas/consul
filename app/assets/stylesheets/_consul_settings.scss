@@ -15,12 +15,15 @@ $black: #222 !default;
 $white: #fdfdfd !default;
 
 $body-background: $white;
-$body-font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif !important !default;
+$body-font-family: "Roboto-Regular", "Source Sans Pro", "Helvetica", "Arial", sans-serif !important !default;
 
 $closebutton-color: $black !default;
 
 $global-radius: rem-calc(3) !default;
-$global-width: rem-calc(1200) !default;
+//$global-width: rem-calc(1200) !default;
+$global-width: 100% !default;
+
+$global-width-navbar: rem-calc(1200) !default;
 
 $header-styles: (
   small: (
@@ -56,7 +59,7 @@ $show-header-for-stacked: true !default;
 $body-margin: calc(50vw - #{$global-width / 2}) !default;
 $full-width-margin: unquote("#{$global-width / 2} - 50vw") !default;
 
-$base-font-size:      rem-calc(17) !default;
+$base-font-size:      rem-calc(12) !default;
 $base-line:           rem-calc(26) !default;
 $line-height:         rem-calc(24) !default;
 $tiny-font-size:      rem-calc(12) !default;
@@ -90,7 +93,7 @@ $highlight-soft:    #f3f8fd !default;
 $light:             #f5f7fa !default;
 $featured:          #ffdc5c !default;
 
-$footer:            #f1f1f1 !default;
+$footer:            #F0F9FF !default;
 $footer-border:     #bfc1c3 !default;
 
 $main-header:       $brand !default;

@@ -1,0 +1,76 @@
+<nav class="navbar navbar-light bg-secondary" id="navbar-top">
+
+  <div id="block-mainnav" class="block block-block-content block-block-content24ff89cf-a1a5-4c37-8490-b01867eb7441">
+
+
+    <div class="content">
+
+      <div class="clearfix text-formatted field--name-body field--type-text-with-summary field--label-hidden field__item">
+        <div class="container-fluid" style="padding: 0">
+          <nav class="row" id="main-nav-rrss">
+            <div class="col-4" id="email"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/mail.svg">
+              <span>alcaldia@lastorresdecotillas.es</span>
+            </div>
+            <div class="col-4" id="phone"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/phone.svg"><span>968 626
+                511</span></div>
+            <div class="col-4" id="rrss"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/brand-facebook.svg"> <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/brand-twitter.svg"> <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/brand-instagram.svg"> <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/brand-whatsapp.svg"></div>
+          </nav>
+          <nav class="row" id="main-nav-cotillas">
+            <div class="col-10 nav-home-item">
+              <div id="nav-item-sede"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/edit.svg"> <a href="/home">Sede Electrónica</a></div>
+              <div id="nav-item-polideportivo"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/ball-tennis.svg"> <a href="/home">Reservas Polideportivo</a></div>
+              <div id="nav-item-tramites"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/calendar-plus.svg"> <a href="/home">Cita Previa Trámites</a></div>
+              <div id="nav-item-sanidad"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/stethoscope.svg"> <a href="/home">Cita Previa Sanitaria</a></div>
+              <div id="nav-item-agenda"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/trees.svg"> <a href="/home">Agenda 2030</a></div>
+              <div id="nav-item-oficina"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/at.svg"> <a href="/home">Oficina Virtual Tributaria</a></div>
+              <div id="nav-item-fondos"><a href="/home"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/currency-euro.svg"> Fondos
+                  Feder</a></div>
+            </div>
+            <div class="col-2 nav-home-item" id="item-transparencia"><a href="/home"><span>Portal de
+                  Transparencia</span><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-04/external-link.svg"></a></div>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</nav>
+
+
+<nav class="navbar account-navbar">
+      <%= render Layout::AccountMenuComponent.new(current_user) %>
+
+</nav>
+
+
+<nav class="navbar menu-nav navbar-light bg-primary navbar-expand-lg mb-4" id="navbar-main">
+    <div class="logo-header">
+
+        <%= link_to root_path, accesskey: "0" do %>
+
+        <img src="https://pre-torrescotillas.opendata.ticsmart.eu/uploads/admin/2023-05-29-071009.071870logo-header-center.svg" alt="Inicio" class="img-fluid d-inline-block align-top">
+        <% end %>
+
+    </div>
+
+  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse justify-content-end" id="CollapsingNavbar">
+    <div id="block-headerhome" class="block block-block-content block-block-contenteb5332c3-194b-4389-b2d3-ac7197401355">
+
+      <div class="content">
+
+        <div class="clearfix text-formatted field--name-body field--type-text-with-summary field--label-hidden field__item">
+          <div id="header-home">
+          <%= render Layout::SubnavigationComponent.new %>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</nav>

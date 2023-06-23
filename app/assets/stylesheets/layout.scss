@@ -686,7 +686,7 @@ body > header,
 // 03. Footer
 // ----------
 
-footer {
+/* footer {
   .logo {
     color: inherit;
   }
@@ -739,7 +739,7 @@ footer {
   .public & {
     @include full-width-background;
   }
-}
+} */
 
 .subfooter {
   border-top: 1px solid $text-light;
