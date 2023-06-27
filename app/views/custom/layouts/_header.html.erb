@@ -46,31 +46,33 @@
 
 
 <nav class="navbar menu-nav navbar-light bg-primary navbar-expand-lg mb-4" id="navbar-main">
-    <div class="logo-header">
+  <div class="container">
+      <div class="logo-header">
 
-        <%= link_to root_path, accesskey: "0" do %>
+          <%= link_to root_path, accesskey: "0" do %>
 
-        <img src="https://pre-torrescotillas.opendata.ticsmart.eu/uploads/admin/2023-05-29-071009.071870logo-header-center.svg" alt="Inicio" class="img-fluid d-inline-block align-top">
-        <% end %>
-
-    </div>
-
-  <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-  <div class="collapse navbar-collapse justify-content-end" id="CollapsingNavbar">
-    <div id="block-headerhome" class="block block-block-content block-block-contenteb5332c3-194b-4389-b2d3-ac7197401355">
-
-      <div class="content">
-
-        <div class="clearfix text-formatted field--name-body field--type-text-with-summary field--label-hidden field__item">
-          <div id="header-home">
-          <%= render Layout::SubnavigationComponent.new %>
-
-          </div>
-        </div>
+          <img src="https://pre-torrescotillas.opendata.ticsmart.eu/uploads/admin/2023-05-29-071009.071870logo-header-center.svg" alt="Inicio" class="img-fluid d-inline-block align-top">
+          <% end %>
 
       </div>
+
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse justify-content-end" id="CollapsingNavbar">
+      <div id="block-headerhome" class="block block-block-content block-block-contenteb5332c3-194b-4389-b2d3-ac7197401355">
+
+        <div class="content">
+
+          <div class="clearfix text-formatted field--name-body field--type-text-with-summary field--label-hidden field__item">
+            <div id="header-home">
+            <%= render Layout::SubnavigationComponent.new %>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
     </div>
-
-
   </div>
 </nav>

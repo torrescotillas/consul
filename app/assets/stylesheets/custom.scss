@@ -1291,40 +1291,12 @@ display: flex;
   padding-bottom: 0.5rem;
 }
 
-/* .navbar .logo-header img {
-  margin-left: 9vw;
-  width: 60%;
-} */
+.navbar.menu-nav a{
+    text-decoration: none;
+    color: var(--bs-body-color);
+}
 
 .logo-header img {
     width: 140px;
 }
-
-@include breakpoint($global-width) {
-    nav.account-navbar {
-            margin-left: $body-margin;
-            margin-right: $body-margin;
-    }
-}
-
-
-nav.account-navbar {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav.menu-nav {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-}
-
-
 
