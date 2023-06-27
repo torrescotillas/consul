@@ -119,3 +119,5 @@ group :development do
 end
 
 eval_gemfile "./Gemfile_custom"
+
+gem "terser", "~> 1.1"
