@@ -39,10 +39,12 @@
 </nav>
 
 
-<nav class="navbar account-navbar">
+<div class="container">
+  <nav class="navbar account-navbar justify-content-end">
       <%= render Layout::AccountMenuComponent.new(current_user) %>
+  </nav>
+</div>
 
-</nav>
 
 
 <nav class="navbar menu-nav navbar-light bg-primary navbar-expand-lg mb-4" id="navbar-main">
