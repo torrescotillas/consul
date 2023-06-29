@@ -116,6 +116,8 @@
 //= require_tree ./sdg_management
 //= require custom
 //= require_tree ./custom
+//= bootstrap.bundle
+
 
 var initialize_modules = function() {
   "use strict";
