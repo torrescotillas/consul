@@ -57,9 +57,9 @@
     justify-content: center;
   }
   #links-footer {
-    width: 26vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10px;
   }
   #links-footer span {
     color: #1E293B;
@@ -695,11 +695,6 @@ div#events span {
         display: flex;
         justify-content: center;
 }
-#links-footer {
-        width: 26vw;
-        display: flex;
-        justify-content: space-evenly;
-}
 #links-footer span {
         color: #1E293B;
         font-weight: 400;
@@ -1231,9 +1226,6 @@ display: flex;
         }
         #container-links-footer {
                 justify-content: space-evenly;
-        }
-        #links-footer {
-                width: 90%;
         }
         #links-footer span {
                 text-align: center;
