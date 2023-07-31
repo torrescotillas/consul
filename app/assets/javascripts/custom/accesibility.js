@@ -53,7 +53,7 @@ jQuery(document).ready(function ($) {
 
         if ($('#block-accesibilidad').css('bottom') == "0px"){
             $('#block-accesibilidad').animate({
-                bottom: "-215px"
+                bottom: "-262px"
             }, 500, function() {
                 // Animation complete.
             });
@@ -71,15 +71,19 @@ jQuery(document).ready(function ($) {
     //balizas rojas
     $(document).on("click", ".balizas", function(){
 
-        if ($('header').hasClass('accesibilidadheader')){
-            $('header').removeClass('accesibilidadheader')
-            $('.main-container').removeClass('accesibilidadmain')
+        if ($('#navbar-top').addClass('accesibilidadheadertop')){
+            $('#navbar-top').removeClass('accesibilidadheadertop')
+            $('.wrapper').children('.container').eq(1).removeClass('accesibilidadheaderlogin')
+            $('#navbar-main').removeClass('accesibilidadheadermain')
+            $('.wrapper').children('.container').eq(2).removeClass('accesibilidadmain')
             $('footer').removeClass('accesibilidadfooter')
             eraseCookie('balizas');
 
         }else{
-            $('header').addClass('accesibilidadheader')
-            $('.main-container').addClass('accesibilidadmain')
+            $('#navbar-top').addClass('accesibilidadheadertop')
+            $('.wrapper').children('.container').eq(1).addClass('accesibilidadheaderlogin')
+            $('#navbar-main').addClass('accesibilidadheadermain')
+            $('.wrapper').children('.container').eq(2).addClass('accesibilidadmain')
             $('footer').addClass('accesibilidadfooter')
             setCookie('balizas','1','1'); //(key,value,expiry in days)
         }
@@ -87,8 +91,10 @@ jQuery(document).ready(function ($) {
 
     var cookie_balizas = getCookie('balizas');
     if (cookie_balizas == 1){
-        $('header').addClass('accesibilidadheader')
-        $('.main-container').addClass('accesibilidadmain')
+        $('#navbar-top').addClass('accesibilidadheadertop')
+        $('.wrapper').children('.container').eq(1).addClass('accesibilidadheaderlogin')
+        $('#navbar-main').addClass('accesibilidadheadermain')
+        $('.wrapper').children('.container').eq(2).addClass('accesibilidadmain')
         $('footer').addClass('accesibilidadfooter')
         $('.input-balizas').prop('checked', true);
     }

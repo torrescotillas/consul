@@ -1,9 +1,11 @@
-.accesibilidadheader,
+.accesibilidadheadertop,
+.accesibilidadheaderlogin,
+.accesibilidadheadermain,
 .accesibilidadmain,
 .accesibilidadfooter{
     border: 2px solid red!important;
 }
-.accesibilidadheader::before{
+.accesibilidadheadertop::before{
     content: "1"!important;
     position: absolute;
     color: white;
@@ -11,8 +13,24 @@
     width: 18px;
     text-align: center;
 }
-.accesibilidadmain::before{
+.accesibilidadheaderlogin::before{
     content: "2"!important;
+    position: absolute;
+    color: white;
+    background-color: red;
+    width: 18px;
+    text-align: center;
+}
+.accesibilidadheadermain::before{
+    content: "3"!important;
+    position: absolute;
+    color: white;
+    background-color: red;
+    width: 18px;
+    text-align: center;
+}
+.accesibilidadmain::before{
+    content: "4"!important;
     position: absolute;
     color: white;
     background-color: red;
@@ -21,7 +39,7 @@
     z-index: 9;
 }
 .accesibilidadfooter::before{
-    content: "3"!important;
+    content: "5"!important;
     position: absolute;
     color: white;
     background-color: red;
@@ -30,7 +48,7 @@
 }
 #block-accesibilidad{
     position: fixed;
-    bottom: -215px;
+    bottom: -262px;
     z-index: 999;
     color: #fff;
     left: 20px;
