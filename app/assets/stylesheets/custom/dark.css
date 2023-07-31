@@ -1,0 +1,252 @@
+main {
+    background-color: #333 !important;
+    color: white;
+}
+.navbar-default {
+    background-color: #333;
+    border-color: #333;
+}
+.tb-megamenu {
+    background-color: #333;
+}
+.tb-megamenu-main .tb-megamenu-item {
+    background-color: #333;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #333;
+}
+.tb-megamenu-main .nav > li > a, .tb-megamenu-main .nav > li > span.tb-megamenu-no-link {
+    color: #fff;
+}
+.tb-megamenu-main .nav > li > a:focus, .tb-megamenu-main .nav > li > a:hover, .tb-megamenu-main .nav > li > span.tb-megamenu-no-link:focus, .tb-megamenu-main .nav > li > span.tb-megamenu-no-link:hover {
+    background-color: #333;
+    color: #10aed5;
+}
+.tb-megamenu-main .nav > .active > a, .tb-megamenu-main .nav > .active > a:hover, .tb-megamenu-main .nav > .active > a:focus, .tb-megamenu-main .nav > .active > span.tb-megamenu-no-link, .tb-megamenu-main .nav > .active > span.tb-megamenu-no-link:hover, .tb-megamenu-main .nav > .active > span.tb-megamenu-no-link:focus {
+    background-color: #333;
+    text-decoration: underline;
+    color: white;
+}
+.form-search{
+    background-color: #333;
+    color: white!important;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+.btn-primary {
+    color: white;
+    background-color: #333;
+    border-color: #333;
+    border: 1px solid white;
+}
+.btn-primary:hover {
+    color: white;
+    background-color: black;
+    border-color: #98cd1d;
+    border-color: white;
+}
+h2 {
+    color: white;
+}
+.block-views-blocknoticias-de-portada-block-1 a {
+    color: white;
+    font-weight: 700;
+}
+.block-views-blocknoticias-de-portada-block-1 a:hover {
+    color: white;
+}
+.block-views-blocknoticias-de-portada-block-1 .views-field-field-fecha-del-articulo time {
+    color: white;
+}
+.block-views-blocknoticias-de-portada-block-1 .more-link a {
+    color: white;
+}
+.block-views-blocknoticias-de-portada-block-1 .more-link a:hover {
+    color: white;
+}
+.contacto-oficina {
+    background-color: #333;
+}
+.contacto-oficina h2 {
+    color: white;
+}
+.contacto-oficina .titulo {
+    color: white;
+}
+.field--name-body a {
+    color: white;
+}
+.contacto-oficina p {
+    color: white;
+}
+footer .logo-footer-tus h2 {
+    color: white;
+}
+.menu--footer a {
+    color: white;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    color: white;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    color: #333;
+}
+#block-copyright p {
+    color: white;
+}
+.breadcrumb {
+    background-color: #333;
+}
+.breadcrumb a {
+    color: white;
+}
+.page-header {
+    color: white;
+}
+#views-bootstrap-billetes-y-abonos-block-1 .views-field-title a{
+    color: #333;
+}
+.tb-megamenu-menu-secundario .nav > .active > a, .tb-megamenu-menu-secundario .nav > .active > a:hover, .tb-megamenu-menu-secundario .nav > .active > a:focus, .tb-megamenu-menu-secundario .nav > .active > span.tb-megamenu-no-link, .tb-megamenu-menu-secundario .nav > .active > span.tb-megamenu-no-link:hover, .tb-megamenu-menu-secundario .nav > .active > span.tb-megamenu-no-link:focus {
+    background-color: #333;
+    color: white;
+    text-decoration: underline;
+}
+.tb-megamenu-menu-secundario .nav > li > a, .tb-megamenu-main .nav > li > span.tb-megamenu-no-link {
+    color: white;
+}
+.tb-megamenu-menu-secundario .tb-megamenu-item {
+    background-color: #333;
+}
+.field--name-body .acerca-tus a {
+    color: white;
+}
+article .field--name-body p{
+    background-color: #333!important;
+    color: white!important;
+}
+.field--name-body .acerca-tus2 a {
+    color: white;
+}
+.webform-flexbox .form-select{
+    background-color: #333;
+    color: white;
+}
+.form-control{
+    background-color: #333;
+    color: white;
+}
+button#edit-submit {
+    background-color: #333;
+}
+button#edit-submit:hover {
+    background-color: #333;
+}
+.mb-3 p, .mb-3 div{
+    color: white!important;
+}
+/*
+.grid {
+    border-bottom: 1px solid #F5F5F5;
+}
+*/
+.d-flex a{
+    color: white;
+}
+h3.title-info-lines {
+    color: white;
+    background: #333;
+}
+a.link-line {
+    color: #fff!important;
+}
+ul.stops li {
+    color: white;
+}
+tr th {
+    color: #fff!important;
+}
+tr.table-times td {
+    color: #fff;
+}
+.line-circle{
+    background: #fff!important;
+}
+.line-number{
+    color: #000!important;
+}
+
+#block-views-block-puntos-de-venta-recarga-block-1 .panel-default > .panel-heading {
+    color: white;
+    background-color: #333;
+    border-color: white;
+}
+#block-views-block-puntos-de-venta-recarga-block-1 .panel-default {
+    border-color: white;
+}
+#block-views-block-puntos-de-venta-recarga-block-1 .panel {
+    background-color: #333;
+}
+#block-views-block-puntos-de-venta-recarga-block-1 .views-bootstrap-list-group a {
+    color: white;
+}
+#block-views-block-puntos-de-venta-recarga-block-1 .views-bootstrap-list-group a:hover {
+    color: white;
+}
+#block-views-block-puntos-de-venta-recarga-block-1  .list-group-item{
+    background-color: #333;
+}
+.bloques-info .billetes-abonos, .bloques-info .red-lineas, .bloques-info .objetos-perdidos, .bloques-info .puntos-venta{
+    background-color: #333 !important;
+    border: 1px solid white;
+}
+#block-noticiasdeportada a, #block-acercadetusnoticias a, #block-noticiasdeportada a, #block-acercadetusnoticias a:hover {
+    color: white!important;
+}
+#block-noticiasdeportada .views-field-field-fecha-del-articulo, #block-acercadetusnoticias .views-field-field-fecha-del-articulo {
+    color: white;
+}
+.panel-de-control .btn-default {
+    color: white;
+    background-color: #333;
+    border-color: white;
+}
+#title_select, #edit-id-type, #edit-id-description, #edit-status, #edit-panel-posts, #edit-id-title {
+    color: white !important;
+}
+.fieldset-legend {
+    color: white;
+}
+#edit-start-date-date, #edit-start-date-time, #edit-final-date-date, #edit-final-date-time {
+    color: white !important;
+}
+#crud-btn {
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+}
+#crud-btn:hover {
+    background-color: #333;
+    color: white;
+}
+div[class*=form-item-affected-routes-] label {
+    color: white !important;
+}
+.table-descriptions .btn-primary {
+    color: #333;
+    background-color: white;
+    border-color: #333;
+    border: 1px solid #333;
+}
+.acceso-home a {
+    color: white;
+    border: 1px solid white;
+}
+.acceso-home a:hover {
+    color: white;
+    border: 1px solid white;
+}
+#block-oficinadeatencionalcliente{
+    background-color: #333;
+}
