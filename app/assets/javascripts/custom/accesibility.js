@@ -29,7 +29,7 @@ jQuery(document).ready(function ($) {
         '</div></div>';
 
     $('.container main').append(html);
-    console.log($('.container main'));
+
     //funciones para cookies
     function setCookie(key, value, expiry) {
         var expires = new Date();
