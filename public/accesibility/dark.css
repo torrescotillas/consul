@@ -55,9 +55,10 @@ main {
     border: 1px solid white;
 }
 footer.site-footer {
-    background-color: #333;
+    background-color: #333 !important;
 }
 footer.site-footer p,
-footer.site-footer a {
-    color: white;
+footer.site-footer a,
+footer.site-footer span {
+    color: white !important;
 }
