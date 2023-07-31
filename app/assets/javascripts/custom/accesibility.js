@@ -28,7 +28,7 @@ jQuery(document).ready(function ($) {
             '<div class="virtual-click">C</div>'+
         '</div></div>';
 
-    $('.main-container .region-header').append(html);
+    $('.container main').append(html);
 
     //funciones para cookies
     function setCookie(key, value, expiry) {
