@@ -104,13 +104,13 @@ jQuery(document).ready(function ($) {
     //modo noche
     $(document).on("click", ".noche", function(){
 
-        var loaded = $("LINK[href*='/assets/dark.css']");
+        var loaded = $("LINK[href*='/accesibility/dark.css']");
         if (loaded.length > 0){
-            $("LINK[href*='/assets/dark.css']").remove();
+            $("LINK[href*='/accesibility/dark.css']").remove();
             eraseCookie('dark');
         }else{
             var style = document.createElement('link')
-            style.href = '/assets/dark.css'
+            style.href = '/accesibility/dark.css'
             style.type = 'text/css'
             style.rel = 'stylesheet'
             style.id = 'dark'
@@ -123,7 +123,7 @@ jQuery(document).ready(function ($) {
     var cookie_dark = getCookie('dark');
     if (cookie_dark == 1){
         var style = document.createElement('link')
-        style.href = '/assets/dark.css'
+        style.href = '/accesibility/dark.css'
         style.type = 'text/css'
         style.rel = 'stylesheet'
         style.id = 'dark'
