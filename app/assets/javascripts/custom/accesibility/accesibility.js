@@ -135,13 +135,13 @@ jQuery(document).ready(function ($) {
     //modo navegacion sencilla
     $(document).on("click", ".sencilla", function(){
 
-        var loaded = $("LINK[href*='/modules/custom/accesibility/css/simple.css']");
+        var loaded = $("LINK[href*='/accesibility/simple.css']");
         if (loaded.length > 0){
-            $("LINK[href*='/modules/custom/accesibility/css/simple.css']").remove();
+            $("LINK[href*='/accesibility/simple.css']").remove();
             eraseCookie('sencilla');
         }else{
             var style = document.createElement('link')
-            style.href = '/modules/custom/accesibility/css/simple.css'
+            style.href = '/accesibility/simple.css'
             style.type = 'text/css'
             style.rel = 'stylesheet'
             style.id = 'simple'
@@ -153,7 +153,7 @@ jQuery(document).ready(function ($) {
     var cookie_sencilla = getCookie('sencilla');
     if (cookie_sencilla == 1){
         var style = document.createElement('link')
-        style.href = '/modules/custom/accesibility/css/simple.css'
+        style.href = '/accesibility/simple.css'
         style.type = 'text/css'
         style.rel = 'stylesheet'
         style.id = 'simple'
