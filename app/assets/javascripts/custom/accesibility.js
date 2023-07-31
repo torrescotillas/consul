@@ -73,17 +73,17 @@ jQuery(document).ready(function ($) {
 
         if ($('#navbar-top').hasClass('accesibilidadheadertop')){
             $('#navbar-top').removeClass('accesibilidadheadertop')
-            $('.wrapper').children('.container').eq(1).removeClass('accesibilidadheaderlogin')
+            $('.wrapper').children('.container').eq(0).removeClass('accesibilidadheaderlogin')
             $('#navbar-main').removeClass('accesibilidadheadermain')
-            $('.wrapper').children('.container').eq(2).removeClass('accesibilidadmain')
+            $('.wrapper').children('.container').eq(1).removeClass('accesibilidadmain')
             $('footer').removeClass('accesibilidadfooter')
             eraseCookie('balizas');
 
         }else{
             $('#navbar-top').addClass('accesibilidadheadertop')
-            $('.wrapper').children('.container').eq(1).addClass('accesibilidadheaderlogin')
+            $('.wrapper').children('.container').eq(0).addClass('accesibilidadheaderlogin')
             $('#navbar-main').addClass('accesibilidadheadermain')
-            $('.wrapper').children('.container').eq(2).addClass('accesibilidadmain')
+            $('.wrapper').children('.container').eq(1).addClass('accesibilidadmain')
             $('footer').addClass('accesibilidadfooter')
             setCookie('balizas','1','1'); //(key,value,expiry in days)
         }
