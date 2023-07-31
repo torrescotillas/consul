@@ -71,7 +71,7 @@ jQuery(document).ready(function ($) {
     //balizas rojas
     $(document).on("click", ".balizas", function(){
 
-        if ($('#navbar-top').addClass('accesibilidadheadertop')){
+        if ($('#navbar-top').hasClass('accesibilidadheadertop')){
             $('#navbar-top').removeClass('accesibilidadheadertop')
             $('.wrapper').children('.container').eq(1).removeClass('accesibilidadheaderlogin')
             $('#navbar-main').removeClass('accesibilidadheadermain')
