@@ -29,8 +29,8 @@ main,
 }
 .container,
 .container .button {
-    background-color: #333;
-    color: white;
+    background-color: #333 !important;
+    color: white !important;
 }
 #navbar-main {
     background-color: #333 !important;
