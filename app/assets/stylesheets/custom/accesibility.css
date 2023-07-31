@@ -166,12 +166,14 @@
     position: relative;
     top: -14px;
     cursor: pointer;
+    color: black;
 }
 .virtual-click{
     font-size: 41px;
     position: relative;
     top: -14px;
     cursor: pointer;
+    color: black;
 }
 .bloque-accesibilidad{
     color: black;
