@@ -92,9 +92,9 @@ jQuery(document).ready(function ($) {
     var cookie_balizas = getCookie('balizas');
     if (cookie_balizas == 1){
         $('#navbar-top').addClass('accesibilidadheadertop')
-        $('.wrapper').children('.container').eq(1).addClass('accesibilidadheaderlogin')
+        $('.wrapper').children('.container').eq(0).addClass('accesibilidadheaderlogin')
         $('#navbar-main').addClass('accesibilidadheadermain')
-        $('.wrapper').children('.container').eq(2).addClass('accesibilidadmain')
+        $('.wrapper').children('.container').eq(1).addClass('accesibilidadmain')
         $('footer').addClass('accesibilidadfooter')
         $('.input-balizas').prop('checked', true);
     }
