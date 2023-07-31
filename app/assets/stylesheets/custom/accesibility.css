@@ -137,28 +137,28 @@
 .virtual-left{
     width: 32px;
     height: 32px;
-    background-image: url(/modules/custom/accesibility/images/right-hover.png);
+    background-image: url(/accesibility/images/right-hover.png);
     transform: rotate(-180deg);
     cursor: pointer;
 }
 .virtual-up{
     width: 32px;
     height: 32px;
-    background-image: url(/modules/custom/accesibility/images/right-hover.png);
+    background-image: url(/accesibility/images/right-hover.png);
     transform: rotate(-90deg);
     cursor: pointer;
 }
 .virtual-down{
     width: 32px;
     height: 32px;
-    background-image: url(/modules/custom/accesibility/images/right-hover.png);
+    background-image: url(/accesibility/images/right-hover.png);
     transform: rotate(90deg);
     cursor: pointer;
 }
 .virtual-right{
     width: 32px;
     height: 32px;
-    background-image: url(/modules/custom/accesibility/images/right-hover.png);
+    background-image: url(/accesibility/images/right-hover.png);
     cursor: pointer;
 }
 .virtual-mover{
