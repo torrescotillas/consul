@@ -114,9 +114,11 @@
   }
   #div-img-footer-europe {
     width: 10%;
+    padding-top: 38px;
   }
   #div-img-footer-cotillas img {
-    max-width: 60px;
+    max-width: 90px;
+    height: 130px;
   }
   #div-img-footer-cotillas {
     width: 10%;
@@ -734,9 +736,6 @@ display: flex;
 #div-img-footer-cotillas {
     width: 10%;
 }
-#div-img-footer-europe {
-    width: 10%;
-}
 #img-feder {
     width: 100%;
 }
@@ -972,6 +971,22 @@ display: flex;
 
 #block-footer p {
         word-break: break-all;
+}
+
+#container-logos-rrss {
+    display: flex;
+    justify-content: space-between;
+}
+
+#div-icons-social {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 65px;
+    width: 251px;
+}
+
+#div-icons-social a {
+    max-width: 70px;
 }
 
 /**
