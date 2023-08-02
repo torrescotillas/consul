@@ -84,9 +84,9 @@
     color: #000 !important;
   }
   
-  #div-icons-social img {
-    max-width: 70px;
-  }
+  #div-icons-social a img {
+    width: 48px !important;
+}
   .subrayado {
     border-bottom: thick solid #FEF08A;
     width: 4vw;
@@ -730,9 +730,6 @@ display: flex;
     justify-content: center;
 }
 
-#div-img-footer-cotillas img {
-        max-width: 60px;
-}
 #div-img-footer-cotillas {
     width: 10%;
 }
@@ -963,10 +960,6 @@ display: flex;
 
 #main-nav-cotillas a:hover {
         text-decoration: none;
-}
-
-#div-icons-social img {
-        max-width: 70px;
 }
 
 #block-footer p {
