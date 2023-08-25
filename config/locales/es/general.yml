@@ -209,6 +209,31 @@ es:
       participation_text: Decide cómo debe ser la ciudad que quieres.
       participation_title: Participación
       privacy: Política de privacidad
+      quick_access: Acceso rápido
+      actuality: Actualidad
+      events: Eventos
+      sports_center_reserves: Reservas polideportivo
+      contact: Contacto
+      urbanism_forms_applications: Urbanismo - Impresos y solicitudes
+      accesibility: Accesibilidad
+      useful: Útil
+      job_offer: Oferta de empleo
+      contracting_bidding: Contratación en licitación
+      bulletin_board: Tablón de anuncios
+      complaints_suggestions: Quejas y sugerencias
+      incidents_street_lighting: Incidencias alumbrado público
+      armed_forces: Fuerzas armadas
+      european_regional_development_fund: Fondo Europeo de Desarrollo Regional
+      a_way_of_doing_europe: Una manera de hacer Europa
+      site_map: Mapa del sitio
+      legal_notice: Aviso legal
+      privacy_policy: Política de Privacidad
+      intranet: Intranet
+      instance: Instancia
+      schedule: Horario
+      schedule: City Hall
+      city_hall: Ayuntamiento
+      of_torres_cotillas: de Torres de Cotillas
     header:
       administration_menu: Menú
       administration: Administración
@@ -233,6 +258,14 @@ es:
           zero: "No tienes notificaciones nuevas"
         notifications: Notificaciones
       sdg: "ODS"
+      electronic_office: Sede electrónica
+      sports_center_reservations: Reservas Polideportivo
+      prior_appointment_procedures: Cita Previa Trámites
+      prior_health_appointment: Cita Previa Sanitaria
+      agenda_2030: Agenda 2030
+      virtual_tax_office: Oficina Virtual Tributaria
+      feder_funds: Fondos Feder
+      transparency_portal: Portal de transparencia
   notifications:
     index:
       empty_notifications: No tienes notificaciones nuevas.

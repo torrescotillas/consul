@@ -13,9 +13,9 @@
                             <div class="row justify-content-center footer mb-4">
                                 <div class="col-md-4">
                                     <p class="footer-title">
-                                        Ayuntamiento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <%= t('layouts.footer.city_hall') %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <br>
-                                        de las Torres de Cotillas <span class="subrayado">.</span>
+                                        <%= t('layouts.footer.of_torres_cotillas') %> <span class="subrayado">.</span>
                                     </p>
                                     <p class="footer-links first-element">
                                         <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-04/map-pin.svg"
@@ -26,7 +26,7 @@
                                     </p>
                                     <p class="footer-links">
                                         <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-04/click.svg"
-                                            alt="clic" width="35" height="35">Instancia
+                                            alt="clic" width="35" height="35"><%= t('layouts.footer.instance') %>
                                     </p>
                                     <p class="footer-links">
                                         <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-04/mail.svg"
@@ -38,59 +38,26 @@
                                     </p>
                                     <p class="footer-links">
                                         <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-04/clock.svg"
-                                            alt="clock" width="35" height="35">Horario
+                                            alt="clock" width="35" height="35"><%= t('layouts.footer.schedule') %>
                                     </p>
                                 </div>
                                 <div class="col-md-4">
-                                    <p class="footer-title">
-                                        Acceso rápido <span class="subrayado">.</span>
-                                    </p>
-                                    <p class="footer-links">
-                                        <a href="/noticias-actualidad">Actualidad</a>
-                                    </p>
-                                    <p class="footer-links">
-                                        <a href="/eventos">Eventos</a>
-                                    </p>
-                                    <p class="footer-links">
-                                        <a href="https://polideportivo.lastorresdigital.es/CronosWeb"
-                                            target="_blank">Reservas Polideportivo</a>
-                                    </p>
-                                    <p class="footer-links">
-                                        <a href="/contacto">Contacto</a>
-                                    </p>
-                                    <p class="footer-links">
-                                        <a href="/informacion-urbanistica">Urbanismo - Impresos y solicitudes</a>
-                                    </p>
-                                    <p class="footer-links">
-                                        <a href="/accesibilidad">Accesibilidad</a>
-                                    </p>
+                                    <p class="footer-title"><%= t('layouts.footer.quick_access') %> <span class="subrayado"></span></p>
+                                    <p class="footer-links"><a href="/noticias-actualidad"><%= t('layouts.footer.actuality') %></a></p>
+                                    <p class="footer-links"><a href="/eventos"><%= t('layouts.footer.events') %></a></p>
+                                    <p class="footer-links"><a href="https://polideportivo.lastorresdigital.es/CronosWeb" target="_blank"><%= t('layouts.footer.sports_center_reserves') %></a></p>
+                                    <p class="footer-links"><a href="/contacto"><%= t('layouts.footer.contact') %></a></p>
+                                    <p class="footer-links"><a href="/informacion-urbanistica"><%= t('layouts.footer.urbanism_forms_applications') %></a></p>
+                                    <p class="footer-links"><a href="/accesibilidad"><%= t('layouts.footer.accesibility') %></a></p>
                                 </div>
                                 <div class="col-md-4">
-                                    <p class="footer-title">
-                                        Útil <span class="subrayado">.</span>
-                                    </p>
-                                    <p class="footer-links">
-                                        <a href="https://lastorresdecotillas.sedelectronica.es/board/9753e838-f59b-11de-b600-00237da12c6a/"
-                                            target="_blank">Oferta de Empleo</a>
-                                    </p>
-                                    <p class="footer-links">
-                                        <a href="https://lastorresdecotillas.sedelectronica.es/contractor-profile-list"
-                                            target="_blank">Contratación en licitación</a>
-                                    </p>
-                                    <p class="footer-links">
-                                        <a href="https://lastorresdecotillas.sedelectronica.es/board"
-                                            target="_blank">Tablón de edictos</a>
-                                    </p>
-                                    <p class="footer-links">
-                                        <a href="/buzon-de-quejas-y-sugerencias/">Quejas y sugerencias</a>
-                                    </p>
-                                    <p class="footer-links">
-                                        <a href="/incidencias-alumbrado-publico/">Incidencias alumbrado público</a>
-                                    </p>
-                                    <p class="footer-links">
-                                        <a href="https://reclutamiento.defensa.gob.es/" target="_blank">Fuerzas
-                                            armadas</a>
-                                    </p>
+                                    <p class="footer-title"><%= t('layouts.footer.useful') %><span class="subrayado">.</span></p>
+                                    <p class="footer-links"><a href="https://lastorresdecotillas.sedelectronica.es/board/9753e838-f59b-11de-b600-00237da12c6a/" target="_blank"><%= t('layouts.footer.job_offer') %></a></p>
+                                    <p class="footer-links"><a href="https://lastorresdecotillas.sedelectronica.es/contractor-profile-list" target="_blank"><%= t('layouts.footer.contracting_bidding') %></a></p>
+                                    <p class="footer-links"><a href="https://lastorresdecotillas.sedelectronica.es/board" target="_blank"><%= t('layouts.footer.bulletin_board') %></a></p>
+                                    <p class="footer-links"><a href="/buzon-de-quejas-y-sugerencias/"><%= t('layouts.footer.complaints_suggestions') %></a></p>
+                                    <p class="footer-links"><a href="/incidencias-alumbrado-publico/"><%= t('layouts.footer.incidents_street_lighting') %></a></p>
+                                    <p class="footer-links"><a href="https://reclutamiento.defensa.gob.es/" target="_blank"><%= t('layouts.footer.armed_forces') %></a></p>
                                 </div>
                             </div>
 
@@ -141,17 +108,17 @@
                             <div id="footer-privacidad">
                                 <div id="div-text-feder">
                                     <div id="text-footer-title">
-                                        <span class="col-6" id="text-feder">Fondo Europeo de Desarrollo Regional</span>
-                                        <span id="text-feder-2">Una manera de hacer Europa</span>
+                                        <span class="col-6" id="text-feder"><%= t('layouts.footer.european_regional_development_fund') %></span>
+                                        <span id="text-feder-2"><%= t('layouts.footer.a_way_of_doing_europe') %></span>
                                     </div>
                                 </div>
                                 <hr>
                                 <div id="container-links-footer">
                                     <div id="links-footer">
-                                        <a href="/mapa-del-sitio"><span>Mapa del sitio</span></a> <a
-                                            href="/aviso-legal"><span>Aviso legal</span></a> <a
-                                            href="/proteccion-de-datos"><span>Politica de Privacidad</span></a> <a
-                                            href="https://sede.lastorresdigital.es/intranet/"><span>Intranet</span></a>
+                                        <a href="/mapa-del-sitio"><span><%= t('layouts.footer.site_map') %></span></a> 
+                                        <a href="/aviso-legal"><span><%= t('layouts.footer.legal_notice') %></span></a>
+                                        <a href="/proteccion-de-datos"><span><%= t('layouts.footer.privacy_policy') %></span></a>
+                                        <a href="https://sede.lastorresdigital.es/intranet/"><span><%= t('layouts.footer.intranet') %></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +126,6 @@
                     </div>
                 </div>
             </section>
-
         </div>
     </div>
 </footer>

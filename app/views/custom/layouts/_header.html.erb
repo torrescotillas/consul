@@ -7,27 +7,26 @@
 
       <div class="clearfix text-formatted field--name-body field--type-text-with-summary field--label-hidden field__item">
         <div class="container-fluid" style="padding: 0">
-          <nav class="row" id="main-nav-rrss">
-            <div class="col-4" id="email"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/mail.svg" alt="mail" width="24" height="24">
+          <nav class="d-flex gap-2" id="main-nav-rrss">
+            <div id="email"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/mail.svg" alt="mail" width="24" height="24">
               <span>alcaldia@lastorresdecotillas.es</span>
             </div>
-            <div class="col-4" id="phone"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/phone.svg" alt="phone" width="24" height="24"><span>968 626
+            <div id="phone"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/phone.svg" alt="phone" width="24" height="24"><span>968 626
                 511</span></div>
-            <div class="col-4" id="rrss"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/brand-facebook.svg" alt="fb" width="24" height="24"> <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/brand-twitter.svg" alt="tw" width="24" height="24"> <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/brand-instagram.svg" alt="ig" width="24" height="24"> <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/brand-whatsapp.svg" alt="wa" width="24" height="24"></div>
+            <div id="rrss"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/brand-facebook.svg" alt="fb" width="24" height="24"> <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/brand-twitter.svg" alt="tw" width="24" height="24"> <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/brand-instagram.svg" alt="ig" width="24" height="24"> <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/brand-whatsapp.svg" alt="wa" width="24" height="24"></div>
+
           </nav>
           <nav class="row" id="main-nav-cotillas">
             <div class="col-10 nav-home-item">
-              <div id="nav-item-sede"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/edit.svg" alt="edit" width="28" height="28"> <a href="/home">Sede Electrónica</a></div>
-              <div id="nav-item-polideportivo"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/ball-tennis.svg" alt="ball" width="28" height="28"> <a href="/home">Reservas Polideportivo</a></div>
-              <div id="nav-item-tramites"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/calendar-plus.svg" alt="calendar" width="28" height="28"> <a href="/home">Cita Previa Trámites</a></div>
-              <div id="nav-item-sanidad"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/stethoscope.svg" alt="stethoscope" width="28" height="28"> <a href="/home">Cita Previa Sanitaria</a></div>
-              <div id="nav-item-agenda"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/trees.svg" alt="trees" width="28" height="28"> <a href="/home">Agenda 2030</a></div>
-              <div id="nav-item-oficina"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/at.svg" alt="at" width="28" height="28"> <a href="/home">Oficina Virtual Tributaria</a></div>
-              <div id="nav-item-fondos"><a href="/home"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/currency-euro.svg" alt="euro" width="28" height="28"> Fondos
-                  Feder</a></div>
+              <div id="nav-item-sede"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/edit.svg" alt="edit" width="28" height="28"> <a href="/home"><%= t('layouts.header.electronic_office') %></a></div>
+              <div id="nav-item-polideportivo"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/ball-tennis.svg" alt="ball" width="28" height="28"> <a href="/home"><%= t('layouts.header.sports_center_reservations') %></a></div>
+              <div id="nav-item-tramites"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/calendar-plus.svg" alt="calendar" width="28" height="28"> <a href="/home"><%= t('layouts.header.prior_appointment_procedures') %></a></div>
+              <div id="nav-item-sanidad"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/stethoscope.svg" alt="stethoscope" width="28" height="28"> <a href="/home"><%= t('layouts.header.prior_health_appointment') %></a></div>
+              <div id="nav-item-agenda"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/trees.svg" alt="trees" width="28" height="28"> <a href="/home"><%= t('layouts.header.agenda_2030') %></a></div>
+              <div id="nav-item-oficina"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/at.svg" alt="at" width="28" height="28"> <a href="/home"><%= t('layouts.header.virtual_tax_office') %></a></div>
+              <div id="nav-item-fondos"><a href="/home"><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/currency-euro.svg" alt="euro" width="28" height="28"><%= t('layouts.header.feder_funds') %></a></div>
             </div>
-            <div class="col-2 nav-home-item" id="item-transparencia"><a href="/home"><span>Portal de
-                  Transparencia</span><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-04/external-link.svg" alt="external" width="24" height="24"></a></div>
+            <div class="col-2 nav-home-item" id="item-transparencia"><a href="/home"><span><%= t('layouts.header.transparency_portal') %></span><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-04/external-link.svg" alt="external" width="24" height="24"></a></div>
           </nav>
         </div>
       </div>

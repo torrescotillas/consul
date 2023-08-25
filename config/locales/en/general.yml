@@ -209,6 +209,29 @@ en:
       participation_text: Decide how to shape the city you want to live in.
       participation_title: Participation
       privacy: Privacy Policy
+      quick_access: Quick access
+      actuality: Actuality
+      events: Events
+      sports_center_reserves: Sport center reserves
+      contact: Contact
+      urbanism_forms_applications: Urbanism - Forms and applications
+      accesibility: Accesibility
+      useful: Useful
+      job_offer: Job offer
+      contracting_bidding: Contracting in bidding
+      bulletin_board: Bulletin board
+      complaints_suggestions: Complaints and suggestions
+      incidents_street_lighting: Incidents street lighting
+      armed_forces: Armed Forces
+      european_regional_development_fund: European Regional Development Fund
+      a_way_of_doing_europe: A way of doing Europe
+      site_map: Site Map
+      legal_notice: Legal Notice
+      privacy_policy: Privacy Policy
+      intranet: Intranet
+      instance: Instance
+      city_hall: City Hall
+      of_torres_cotillas: of Torres de Cotillas
     header:
       administration_menu: Menu
       administration: Administration
@@ -233,6 +256,14 @@ en:
           zero: "You don't have new notifications"
         notifications: Notifications
       sdg: "SDG"
+      electronic_office: Electronic office
+      sports_center_reservations: Sports Center Reservations
+      prior_appointment_procedures: Prior Appointment Procedures
+      prior_health_appointment: Prior Health Appointment
+      agenda_2030: Agenda 2030
+      virtual_tax_office: Virtual Tax Office
+      feder_funds: Feder funds
+      transparency_portal: Transparency portal
   notifications:
     index:
       empty_notifications: You don't have new notifications.
