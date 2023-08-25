@@ -2,61 +2,52 @@
 
 <div id="items-container">
 
-<div>
-  <%= layout_menu_link_to t("layouts.header.debates"),
-                                  debates_path,
-                                  controller_name == "debates",
-                                  accesskey: "1" %>
-</div>
+<% if feature?(:debates) %>
+        <div>
+          <%= layout_menu_link_to t("layouts.header.debates"),
+                                          debates_path,
+                                          controller_name == "debates",
+                                          accesskey: "1" %>
+        </div>
+<% end %>
 
-<div>
-        <%= layout_menu_link_to t("layouts.header.proposals"),
-                                proposals_path,
-                                controller.class == ProposalsController,
-                                accesskey: "2" %>
-</div>
+<% if feature?(:proposals) %>
+        <div>
+                <%= layout_menu_link_to t("layouts.header.proposals"),
+                                        proposals_path,
+                                        controller.class == ProposalsController,
+                                        accesskey: "2" %>
+        </div>
+<% end %>
 
-<div>
-        <%= layout_menu_link_to t("layouts.header.poll_questions"),
-                                  polls_path,
-                                  controller_name == "polls" || (controller_name == "questions" && controller.class.module_parent == Polls),
-                                  accesskey: "3" %>
-</div>
-
-
-<div>
-
-        <%= layout_menu_link_to t("layouts.header.collaborative_legislation"),
-                                legislation_processes_path,
-                                controller.class.module_parent == Legislation,
-                                accesskey: "4" %>
-</div>
+<% if feature?(:polls) %>
+        <div>
+                <%= layout_menu_link_to t("layouts.header.poll_questions"),
+                                          polls_path,
+                                          controller_name == "polls" || (controller_name == "questions" && controller.class.module_parent == Polls),
+                                          accesskey: "3" %>
+        </div>
+<% end %>
 
 
-<div>
-        <%= layout_menu_link_to t("layouts.header.budgets"),
-                                  budgets_path,
-                                  controller_name == "budgets" || controller_name == "investments",
-                                  accesskey: "5" %>
-</div>
+<% if feature?(:sdg) %>
+        <div>
+                <%= layout_menu_link_to t("layouts.header.sdg"),
+                                        sdg_goals_path,
+                                        controller_path == "sdg/goals" && action_name != "help",
+                                        accesskey: "6" %>
+        </div>
+<% end %>
 
 
-
-<div>
-        <%= layout_menu_link_to t("layouts.header.sdg"),
-                                sdg_goals_path,
-                                controller_path == "sdg/goals" && action_name != "help",
-                                accesskey: "6" %>
-</div>
-
-
-
-<div>
-        <%= layout_menu_link_to t("layouts.header.help"),
-                                help_path,
-                                current_page?(help_path),
-                                accesskey: "7" %>
-</div>
+<% if feature?(:help_page) %>
+        <div>
+                <%= layout_menu_link_to t("layouts.header.help"),
+                                        help_path,
+                                        current_page?(help_path),
+                                        accesskey: "7" %>
+        </div>
+<% end %>
 
 <%= raw content_block("subnavigation_right") %>
 
