@@ -928,6 +928,69 @@ es:
       user_permission_info: Con tu cuenta ya puedes...
       user_permission_verify: "Para poder realizar las siguientes acciones, verifica tu cuenta."
       user_permission_verify_my_account: Verificar mi cuenta
+  tu_propones:
+    access_here: Accede aquí a
+    title: Tú propones
+    subtitle: ¿Cómo quieres participar?
+    paragraph_1: Tú propones ideas para mejorar la ciudad. Puedes compartir opiniones con otras personas sobre temas que te importan de tu barrio y la ciudad o proponer nuevas actuaciones al Ayuntamiento.
+    place: en Decide Torres de Cotillas.
+    card:
+      title_1: Debates ciudadanos
+      subtitle_1: Inicia un debate para compartir puntos de vista con otras personas sobre los temas que te preocupan de la ciudad de Torres de Cotillas.
+      button_1: Ir a Debates Ciudadanos
+      title_2: Propuestas ciudadanas
+      subtitle_2: Haz una propuesta ciudadana. Si obtiene los apoyos suficientes y pasa a votación, puedes conseguir que todos los habitantes de Torres de Cotillas decidan cómo quieren que sea nuestra ciudad.
+      button_2: Ir a Propuestas Ciudadanas
+    debates:
+      title: ¿Cómo participar en los Debates?
+      paragraph_1: Inicia un tema que quieras compartir con otras personas. Debes registrarte o iniciar sesión para abrir un debate nuevo o para comentar en los debates abiertos de otras personas. También para valorarlos con los botones de 'Estoy de acuerdo' o 'No estoy de acuerdo'.
+      paragraph_2: Ten en cuenta que un debate no activa ningún mecanismo de actuación concreto. Si quieres hacer una propuesta para la ciudad o plantear un proyecto de presupuestos participativos cuando se abra la convocatoria, ve a la sección de propuestas ciudadanas o a la de Presupuestos Participativos.
+      paragraph_3_2: más información sobre debates. 
+      participate: "Para participar en un debate es necesario:"
+      step_1_title: Registrarse
+      step_1_pragraph_1: Para empezar un debate es necesario
+      step_1_pragraph_2: registrarse
+      step_1_pragraph_3: en Decide Torres de Cotillas
+      step_2_title: Comentar
+      step_2_pragraph: Comparte tus ideas en los debates abiertos o valóralos con los botones de estoy/no estoy de acuerdo. Lee antes los temas abiertos.
+      step_3_title: Debatir con respeto
+      step_3_pragraph: Sé educado y respeta a los demás. Así construimos un espacio amable y seguro.
+      step_4_title: Iniciar debate
+      step_4_pragraph: Crea un nuevo tema de conversación con un título y texto claros.
+    proposals:
+      title: ¿Cómo participar en las Propuestas ciudadanas?
+      paragraph_1: Crea una propuesta para poder mejorar las actuaciones del Ayuntamiento de Torres de Cotillas. La ciudadanía puede plantear una propuesta en Decide Torres de Cotillas, para ello la persona solo tiene que estar registrada en la plataforma.
+      paragraph_2: Las propuestas ciudadanas estarán vigentes en Decide Torres de Cotillas durante 12 meses, donde podrán ser apoyadas por la ciudadanía mayor de 16 años y empadronada en la ciudad de Torres de Cotillas.
+      paragraph_3: Si las propuestas ciudadanas consiguen el apoyo del 1% de las personas mayores de 16 años empadronadas en la ciudad de Torres de Cotillas, el Ayuntamiento convocará una votación ciudadana. Una vez celebrada, si hay más gente a favor que en contra, el gobierno municipal estudiará la viabilidad de la misma con el objetivo de su implementación en la ciudad.
+      link_text: más información sobre propuestas.
+      participate: "Para abrir una propuesta ciudadana es necesario:"
+      steps:
+        title_1: Proponer
+        paragraph_1: Puedes proponer al Ayuntamiento cualquier actuación que mejore nuestra ciudad.
+        title_2: Apoyar
+        paragraph_2: Apoya otras propuestas ciudadanas o recoge apoyos para tu propuesta.
+        title_3: Decidir
+        paragraph_3: Las propuestas que han conseguido los apoyos suficientes pasan a votación, para que puedas decidir si estás a favor o en contra.
+        title_4: Hacer
+        paragraph_4: El Ayuntamiento estudia la propuesta para llevarla a cabo si ha conseguido los apoyos suficientes.
+    polls:
+      title: ¿Cómo participar en las votaciones ciudadanas?
+      paragraph_1: Puedes participar en la toma decisiones municipales de forma directa. Cuando una propuesta ciudadana alcanza el 1% de apoyos de las personas mayores de 16 años empadronadas en Torres de Cotillas, o cuando el Ayuntamiento decide abrir ciertas cuestiones a decisión directa de la ciudadanía, se abre una votación ciudadana.
+      paragraph_2_1: La posibilidad de votar está activa única y exclusivamente durante el periodo de votación, pudiendo consultar toda la información detallada en cada proceso de
+      paragraph_2_2: que el Ayuntamiento convoque.
+      link_paragraph_2: votación
+      link_text: más información sobre votaciones.
+      participate: "Para participar en una votación ciudadana es necesario:"
+      button: Ver todas las votaciones
+      steps:
+        title_1: Registrarse
+        paragraph_1: Para votar es necesario
+        title_2: Verificar la cuenta
+        paragraph_2: Verifica tu cuenta. De esta forma nos aseguramos de que el proceso es seguro.
+        title_3: Votar
+        paragraph_3: Elige tus opciones sobre los temas que se plantean y vota. El voto es secreto.
+
+
   invisible_captcha:
     sentence_for_humans: "Si eres humano, por favor ignora este campo"
     timestamp_error_message: "Eso ha sido demasiado rápido. Por favor, reenvía el formulario."

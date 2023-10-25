@@ -926,6 +926,69 @@ en:
       user_permission_info: With your account you can...
       user_permission_verify: "To perform the following actions verify your account."
       user_permission_verify_my_account: Verify my account
+  tu_propones:
+    access_here: Access here to
+    title: You propose
+    subtitle: How do you want to participate?
+    paragraph_1: You propose ideas to improve the city. You can share opinions with other people about issues that matter to you in your neighborhood and the city or propose new actions to the City Council.
+    place: on Decide Torres de Cotillas.
+    card:
+      title_1: Citizen Debates
+      subtitle_1: Start a debate to share viewpoints with other people about the issues that concern you in the city of Torres de Cotillas.
+      button_1: Go to Citizen Debates
+      title_2: Citizen Proposals
+      subtitle_2: Make a citizen proposal. If it gets enough support and goes to a vote, you can get all the residents of Torres de Cotillas to decide how they want our city to be.
+      button_2: Go to Citizen Proposals
+    debates:
+      title: How to participate in Debates?
+      paragraph_1: Start a topic you want to share with others. You need to register or log in to start a new debate or comment on open debates by other people. Also, to rate them with 'Agree' or 'Disagree' buttons.
+      paragraph_2: Keep in mind that a debate does not trigger any specific action. If you want to make a proposal for the city or present a participatory budget project when the call is open, go to the section of citizen proposals or the Participatory Budgets section.
+      paragraph_3_2: more information about debates.
+      participate: "To participate in a debate, you need to:"
+      step_1_title: Register
+      step_1_pragraph_1: To start a debate, it's necessary to
+      step_1_pragraph_2: register
+      step_1_pragraph_3: at Decide Torres de Cotillas
+      step_2_title: Comment
+      step_2_pragraph: Share your ideas in open debates or rate them with the Agree/Disagree buttons. Read open topics first.
+      step_3_title: Debate with Respect
+      step_3_pragraph: Be polite and respect others. That's how we create a friendly and safe space.
+      step_4_title: Start a Debate
+      step_4_pragraph: Create a new conversation topic with a clear title and text.
+    proposals:
+      title: How to participate in Citizen Proposals?
+      paragraph_1: Create a proposal to improve the actions of the Torres de Cotillas City Council. Citizens can submit a proposal on Decide Torres de Cotillas; the only requirement is being registered on the platform.
+      paragraph_2: Citizen proposals will be active on Decide Torres de Cotillas for 12 months and can be supported by citizens over 16 years old and registered in the city of Torres de Cotillas.
+      paragraph_3: If citizen proposals receive support from 1% of citizens over 16 years old registered in Torres de Cotillas, the City Council will call for a citizen vote. If there are more people in favor than against, the municipal government will study its feasibility for implementation in the city.
+      link_text: more information about proposals.
+      participate: "To open a citizen proposal, you need to:"
+      steps:
+        title_1: Propose
+        paragraph_1: You can propose any action to the City Council that improves our city.
+        title_2: Support
+        paragraph_2: Support other citizen proposals or gather support for your proposal.
+        title_3: Decide
+        paragraph_3: Proposals that have garnered enough support go to a vote, allowing you to decide whether you are in favor or against.
+        title_4: Implement
+        paragraph_4: The City Council studies the proposal for implementation if it has received sufficient support.
+    polls:
+      title: How to participate in Citizen Polls?
+      paragraph_1: You can participate in direct municipal decision-making. When a citizen proposal reaches 1% support from residents over 16 years old registered in Torres de Cotillas, or when the City Council decides to open certain matters for direct citizen decision, a citizen poll is opened.
+      paragraph_2_1: The possibility to vote is only active during the voting period, and you can find detailed information about each process during
+      paragraph_2_2: that the City Council calls for.
+      link_paragraph_2: voting
+      link_text: more information about polls.
+      participate: "To participate in a citizen poll, you need to:"
+      button: View all polls
+      steps:
+        title_1: Register
+        paragraph_1: To vote, it is necessary to
+        title_2: Verify your account
+        paragraph_2: Verify your account. This way, we ensure the process is secure.
+        title_3: Vote
+        paragraph_3: Choose your options on the issues presented and cast your vote. The vote is confidential.
+
+  
   invisible_captcha:
     sentence_for_humans: "If you are human, ignore this field"
     timestamp_error_message: "Sorry, that was too quick! Please resubmit."

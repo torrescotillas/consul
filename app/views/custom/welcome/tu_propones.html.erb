@@ -6,9 +6,9 @@
 
     <div class="wrapper <%= yield(:wrapper_class) %>">
       <div class="container ">
-        <h1 class="text-center mt-5">Tú propones</h1>
-        <h2 class="text-center mt-5 mb-5">¿Cómo quieres participar?</h2>
-        <p class="text-justify">Tú propones ideas para mejorar la ciudad. Puedes compartir opiniones con otras personas sobre temas que te importan de tu barrio y la ciudad o proponer nuevas actuaciones al Ayuntamiento.</p>
+        <h1 class="text-center mt-5"><%= t("tu_propones.title") %></h1>
+        <h2 class="text-center mt-5 mb-5"><%= t("tu_propones.subtitle") %></h2>
+        <p class="text-justify"><%= t("tu_propones.paragraph_1") %></p>
 
         <div class="row block-cards mx-auto">
           <div class="col-md-5 p-0 me-4 mt-3">
@@ -17,9 +17,9 @@
                   <div class="row mt-4 mb-4 justify-content-center mx-auto">
                       <img class="rounded imgSize" alt="Ilustración de sección debates, un hombre y una mujer debatiendo" src="https://decide.madrid.es/assets/03-Ilustraci%C3%B3n-secci%C3%B3n-debates@x2-d51802f5153ed636aa594c5b1cc939aa2a069e88a1525691cf14a1a3a1601278.png">
                   </div>
-                  <h3 class="text-center blue-text">Debates ciudadanos</h3>
-                  <p class="mt-4 mb-5 text-center">Inicia un debate para compartir puntos de vista con otras personas sobre los temas que te preocupan de la ciudad de Torres de Cotillas.</p>
-                  <a class="btn btn-principal no-underline button-fixed" style="padding: 0.5rem !important" href="/debates">Ir a Debates Ciudadanos</a>
+                  <h3 class="text-center blue-text"><%= t("tu_propones.card.title_1") %></h3>
+                  <p class="mt-4 mb-5 text-center"><%= t("tu_propones.card.subtitle_1") %></p>
+                  <a class="btn btn-principal no-underline button-fixed" style="padding: 0.5rem !important" href="/debates"><%= t("tu_propones.card.button_1") %></a>
               </div>
             </div>
           </div>
@@ -30,9 +30,9 @@
                       <div class="row mt-4 mb-4 justify-content-center">
                           <img class=" rounded imgSize" alt="Ilustración de sección debates, un hombre y una mujer debatiendo" src="https://decide.madrid.es/assets/04-Ilustraci%C3%B3n-secci%C3%B3n-propuestas-ciudadanas@x2-9b74236e0f334ef42c9fe15908ffb57ec0c00c9ff8e89e0ac7280bb6dfbe7341.png">
                       </div>
-                      <h3 class="text-center blue-text">Propuestas ciudadanas</h3>
-                      <p class="mt-4 mb-5 text-center">Haz una propuesta ciudadana. Si obtiene los apoyos suficientes y pasa a votación, puedes conseguir que todos los habitantes de Torres de Cotillas decidan cómo quieren que sea nuestra ciudad.</p>
-                      <a class="btn btn-principal no-underline button-fixed" style="padding: 0.5rem !important" href="/proposals">Ir a Propuestas Ciudadanas</a>
+                      <h3 class="text-center blue-text"><%= t("tu_propones.card.title_2") %></h3>
+                      <p class="mt-4 mb-5 text-center"><%= t("tu_propones.card.subtitle_2") %></p>
+                      <a class="btn btn-principal no-underline button-fixed" style="padding: 0.5rem !important" href="/proposals"><%= t("tu_propones.card.button_2") %></a>
                   </div>
             </div>
           </div>
@@ -41,10 +41,10 @@
 
         <div class="row g-5 mt-5 mb-5 mx-0">
           <div class="col-md-6">
-            <h2>¿Cómo participar en los Debates?</h2>
-            <p class="mt-3 text-justify">Inicia un tema que quieras compartir con otras personas. Debes registrarte o iniciar sesión para abrir un debate nuevo o para comentar en los debates abiertos de otras personas. También para valorarlos con los botones de 'Estoy de acuerdo' o 'No estoy de acuerdo'.</p>
-            <p class="text-justify">Ten en cuenta que un debate no activa ningún mecanismo de actuación concreto. Si quieres hacer una propuesta para la ciudad o plantear un proyecto de presupuestos participativos cuando se abra la convocatoria, ve a la sección de propuestas ciudadanas o a la de Presupuestos Participativos.</p>
-            <p class="text-justify">Accede aquí a <a href="/help" data-turbo-frame="modal_show" data-controller="general" data-action="click->general#showModal" data-general-modal="modalShow">más información sobre debates.</a></p>
+            <h2><%= t("tu_propones.debates.title") %></h2>
+            <p class="mt-3 text-justify"><%= t("tu_propones.debates.paragraph_1") %></p>
+            <p class="text-justify"><%= t("tu_propones.debates.paragraph_2") %></p>
+            <p class="text-justify"><%= t("tu_propones.access_here") %> <a href="/help" data-turbo-frame="modal_show" data-controller="general" data-action="click->general#showModal" data-general-modal="modalShow"><%= t("tu_propones.debates.paragraph_3_2") %></a></p>
           </div>
           <div class="col-md-6 p-0">
             <%= image_tag("monumento-torres.jpg", class: "img-fluid radius", alt: "Monumento de un hombre y una mujer.", style: "border-radius: 1rem;") %>
@@ -52,7 +52,7 @@
         </div>
 
         <div class="row d-md-block d-none ">
-          <span class="h6">Para participar en un debate es necesario</span>
+          <span class="h6"><%= t("tu_propones.debates.participate") %></span>
           <div class="row flex-row flex-nowrap horizontal-scroll mt-4">
             <div class="col-md-3 col-auto">
                 <div class="row">
@@ -60,8 +60,8 @@
                     <div class="col pt-3"><hr class="orange-line"></div>
                 </div>
                 <div class="row">
-                    <h4>Registrarse</h4>
-                    <p class="text-justify">Para empezar un debate es necesario <a href="/users/sign_up" data-turbo-frame="modal_show" data-controller="general" data-action="click->general#showModal" data-general-modal="modalShow">registrarse</a> en Decide Torres de Cotillas</p>
+                    <h4><%= t("tu_propones.debates.step_1_title") %></h4>
+                    <p class="text-justify"><%= t("tu_propones.access_here") %> <a href="/users/sign_up" data-turbo-frame="modal_show" data-controller="general" data-action="click->general#showModal" data-general-modal="modalShow"><%= t("tu_propones.debates.step_1_pragraph_2") %></a> <%= t("tu_propones.debates.step_1_pragraph_3") %></p>
                 </div>
             </div>
             <div class="col-md-3 col-auto">
@@ -70,8 +70,8 @@
                     <div class="col pt-3"><hr class="orange-line"></div>
                 </div>
                 <div class="row">
-                    <h4>Comentar</h4>
-                    <p class="text-justify">Comparte tus ideas en los debates abiertos o valóralos con los botones de estoy/no estoy de acuerdo. Lee antes los temas abiertos.</p>
+                    <h4><%= t("tu_propones.debates.step_2_title") %></h4>
+                    <p class="text-justify"><%= t("tu_propones.debates.step_2_pragraph") %></p>
                 </div>
             </div>
             <div class="col-md-3 col-auto">
@@ -80,8 +80,8 @@
                     <div class="col pt-3"><hr class="orange-line"></div>
                 </div>
                 <div class="row">
-                    <h4>Debatir con respeto</h4>
-                    <p class="text-justify">Sé educado y respeta a los demás. Así construimos un espacio amable y seguro.</p>
+                    <h4><%= t("tu_propones.debates.step_3_title") %></h4>
+                    <p class="text-justify"><%= t("tu_propones.debates.step_3_pragraph") %></p>
                 </div>
             </div>
             <div class="col-md-3 col-auto">
@@ -90,8 +90,8 @@
                     <div class="col pt-3"><hr class="orange-line"></div>
                 </div>
                 <div class="row">
-                    <h4>Iniciar debate</h4>
-                    <p class="text-justify">Crea un nuevo tema de conversación con un título y texto claros.</p>
+                    <h4><%= t("tu_propones.debates.step_4_title") %></h4>
+                    <p class="text-justify"><%= t("tu_propones.debates.step_4_pragraph") %></p>
                 </div>
             </div>
           </div>
@@ -104,8 +104,8 @@
                 <div class="row">
                     <div class="col-auto" style="color: #9dcef0; "><h3 style="font-size: 3rem">1</h3></div>
                     <div class="col pt-3">
-                      <h4>Registrarse</h4>
-                      <p class="text-justify">Para empezar un debate es necesario <a href="users/sign_up" data-turbo-frame="modal_show" data-controller="general" data-action="click->general#showModal" data-general-modal="modalShow">registrarse</a> en Decide Torres de Cotillas</p>
+                      <h4><%= t("tu_propones.debates.step_1_title") %></h4>
+                      <p class="text-justify"><%= t("tu_propones.access_here") %> <a href="/users/sign_up" data-turbo-frame="modal_show" data-controller="general" data-action="click->general#showModal" data-general-modal="modalShow"><%= t("tu_propones.debates.step_1_pragraph_2") %></a> <%= t("tu_propones.debates.step_1_pragraph_3") %></p>
                     </div>
                 </div>
                 <div class="row">
@@ -116,8 +116,8 @@
                 <div class="row">
                     <div class="col-auto" style="color: #9dcef0; "><h3 style="font-size: 3rem">2</h3></div>
                     <div class="col pt-3">
-                      <h4>Comentar</h4>
-                      <p class="text-justify">Comparte tus ideas en los debates abiertos o valóralos con los botones de estoy/no estoy de acuerdo. Lee antes los temas abiertos.</p>
+                      <h4><%= t("tu_propones.debates.step_2_title") %></h4>
+                      <p class="text-justify"><%= t("tu_propones.debates.step_2_pragraph") %></p>
                     </div>
                 </div>
                 <div class="row">
@@ -128,8 +128,8 @@
                 <div class="row">
                   <div class="col-auto" style="color: #9dcef0; "><h3 style="font-size: 3rem">3</h3></div>
                     <div class="col pt-3">
-                      <h4>Debatir con respeto</h4>
-                      <p class="text-justify">Sé educado y respeta a los demás. Así construimos un espacio amable y seguro.</p>
+                      <h4><%= t("tu_propones.debates.step_3_title") %></h4>
+                      <p class="text-justify"><%= t("tu_propones.debates.step_3_pragraph") %></p>
                     </div>
                 </div>
                 <div class="row">
@@ -141,8 +141,8 @@
                 <div class="row">
                     <div class="col-auto" style="color: #9dcef0; "><h3 style="font-size: 3rem">4</h3></div>
                     <div class="col pt-3">
-                      <h4>Iniciar debate</h4>
-                      <p class="text-justify">Crea un nuevo tema de conversación con un título y texto claros.</p>
+                      <h4><%= t("tu_propones.debates.step_4_title") %></h4>
+                      <p class="text-justify"><%= t("tu_propones.debates.step_4_pragraph") %></p>
                     </div>
                 </div>
                 <div class="row">
@@ -154,10 +154,10 @@
 
         <div class="mt-4">
           <div class="d-md-none">
-              <a class="btn btn-principal w-100 no-underline" href="/debates">Ir a Debates Ciudadanos</a>
+              <a class="btn btn-principal w-100 no-underline" href="/debates"><%= t("tu_propones.card.button_1") %></a>
           </div>
           <div class="d-md-block d-none text-center">
-              <a class="btn btn-principal no-underline" href="/debates">Ir a Debates Ciudadanos</a>
+              <a class="btn btn-principal no-underline" href="/debates"><%= t("tu_propones.card.button_1") %></a>
           </div>
         </div>
 
@@ -166,16 +166,16 @@
               <%= image_tag("edificio-torres.jpg", class: "img-fluid radius", alt: "Monumento de un hombre y una mujer.", style: "border-radius: 1rem;") %>
           </div>
           <div class="col-md-6">
-              <h2>¿Cómo participar en las Propuestas ciudadanas?</h2>
-              <p class="mt-3 text-justify">Crea una propuesta para poder mejorar las actuaciones del Ayuntamiento de Torres de Cotillas. La ciudadanía puede plantear una propuesta en Decide Torres de Cotillas, para ello la persona solo tiene que estar registrada en la plataforma.</p>
-              <p class="text-justify">Las propuestas ciudadanas estarán vigentes en Decide Torres de Cotillas durante 12 meses, donde podrán ser apoyadas por la ciudadanía mayor de 16 años y empadronada en la ciudad de Torres de Cotillas.</p>
-              <p class="text-justify">Si las propuestas ciudadanas consiguen el apoyo del 1% de las personas mayores de 16 años empadronadas en la ciudad de Torres de Cotillas, el Ayuntamiento convocará una votación ciudadana. Una vez celebrada, si hay más gente a favor que en contra, el gobierno municipal estudiará la viabilidad de la misma con el objetivo de su implementación en la ciudad. </p>
-              <p class="text-justify">Accede aquí a <a href="/help" data-turbo-frame="modal_show" data-controller="general" data-action="click->general#showModal" data-general-modal="modalShow">más información sobre propuestas.</a></p>
+              <h2><%= t("tu_propones.proposals.title") %></h2>
+              <p class="mt-3 text-justify"><%= t("tu_propones.proposals.paragraph_1") %></p>
+              <p class="text-justify"><%= t("tu_propones.proposals.paragraph_2") %></p>
+              <p class="text-justify"><%= t("tu_propones.proposals.paragraph_3") %></p>
+              <p class="text-justify"><%= t("tu_propones.access_here") %> <a href="/help" data-turbo-frame="modal_show" data-controller="general" data-action="click->general#showModal" data-general-modal="modalShow"><%= t("tu_propones.proposals.link_text") %></a></p>
           </div>
         </div>
 
         <div class="row d-md-block d-none">
-          <span class="h6">Para abrir una propuesta ciudadana es necesario:</span>
+          <span class="h6"><%= t("tu_propones.proposals.participate") %></span>
           <div class="row flex-row flex-nowrap horizontal-scroll mt-4">
             <div class="col-md-3 col-auto">
                 <div class="row">
@@ -183,8 +183,8 @@
                     <div class="col pt-3"><hr class="orange-line"></div>
                 </div>
                 <div class="row">
-                    <h4>Proponer</h4>
-                    <p class="text-justify">Puedes proponer al Ayuntamiento cualquier actuación que mejore nuestra ciudad.</p>
+                    <h4><%= t("tu_propones.proposals.steps.title_1") %></h4>
+                    <p class="text-justify"><%= t("tu_propones.proposals.steps.paragraph_1") %></p>
                 </div>
             </div>
             <div class="col-md-3 col-auto">
@@ -193,8 +193,8 @@
                     <div class="col pt-3"><hr class="orange-line"></div>
                 </div>
                 <div class="row">
-                    <h4>Apoyar</h4>
-                    <p class="text-justify">Apoya otras propuestas ciudadanas o recoge apoyos para tu propuesta.</p>
+                    <h4><%= t("tu_propones.proposals.steps.title_2") %></h4>
+                    <p class="text-justify"><%= t("tu_propones.proposals.steps.paragraph_2") %></p>
                 </div>
             </div>
             <div class="col-md-3 col-auto">
@@ -203,8 +203,8 @@
                     <div class="col pt-3"><hr class="orange-line"></div>
                 </div>
                 <div class="row">
-                    <h4>Decidir</h4>
-                    <p class="text-justify">Las propuestas que han conseguido los apoyos suficientes pasan a votación, para que puedas decidir si estás a favor o en contra.</p>
+                    <h4><%= t("tu_propones.proposals.steps.title_3") %></h4>
+                    <p class="text-justify"><%= t("tu_propones.proposals.steps.paragraph_3") %></p>
                 </div>
             </div>
             <div class="col-md-3 col-auto">
@@ -213,22 +213,22 @@
                     <div class="col pt-3"><hr class="orange-line"></div>
                 </div>
                 <div class="row">
-                    <h4>Hacer</h4>
-                    <p class="text-justify">El Ayuntamiento estudia la propuesta para llevarla a cabo si ha conseguido los apoyos suficientes.</p>
+                    <h4><%= t("tu_propones.proposals.steps.title_4") %></h4>
+                    <p class="text-justify"><%= t("tu_propones.proposals.steps.paragraph_4") %></p>
                 </div>
             </div>
           </div>
         </div>
 
         <div class="row d-md-none mx-0">
-          <span class="h6">Para abrir una propuesta ciudadana es necesario:</span>
+          <span class="h6"><%= t("tu_propones.proposals.participate") %></span>
           <div class="row flex-row mt-4">
             <div class="col-12">
                 <div class="row">
                     <div class="col-auto" style="color: #9dcef0; "><h3 style="font-size: 3rem">1</h3></div>
                     <div class="col pt-3">
-                      <h4>Proponer</h4>
-                      <p class="text-justify">Puedes proponer al Ayuntamiento cualquier actuación que mejore nuestra ciudad.</p>
+                      <h4><%= t("tu_propones.proposals.steps.title_1") %></h4>
+                      <p class="text-justify"><%= t("tu_propones.proposals.steps.paragraph_1") %></p>
                     </div>
                 </div>
                 <div class="row">
@@ -239,8 +239,8 @@
                 <div class="row">
                     <div class="col-auto" style="color: #9dcef0; "><h3 style="font-size: 3rem">2</h3></div>
                     <div class="col pt-3">
-                      <h4>Apoyar</h4>
-                      <p class="text-justify">Apoya otras propuestas ciudadanas o recoge apoyos para tu propuesta.</p>
+                      <h4><%= t("tu_propones.proposals.steps.title_2") %></h4>
+                      <p class="text-justify"><%= t("tu_propones.proposals.steps.paragraph_2") %></p>
                     </div>
                 </div>
                 <div class="row">
@@ -251,8 +251,8 @@
                 <div class="row">
                   <div class="col-auto" style="color: #9dcef0; "><h3 style="font-size: 3rem">3</h3></div>
                     <div class="col pt-3">
-                      <h4>Decidir</h4>
-                      <p class="text-justify">Las propuestas que han conseguido los apoyos suficientes pasan a votación, para que puedas decidir si estás a favor o en contra.</p>
+                      <h4><%= t("tu_propones.proposals.steps.title_3") %></h4>
+                      <p class="text-justify"><%= t("tu_propones.proposals.steps.paragraph_3") %></p>
                     </div>
                 </div>
                 <div class="row">
@@ -263,8 +263,8 @@
                 <div class="row">
                     <div class="col-auto" style="color: #9dcef0; "><h3 style="font-size: 3rem">4</h3></div>
                     <div class="col pt-3">
-                      <h4>Hacer</h4>
-                      <p class="text-justify">El Ayuntamiento estudia la propuesta para llevarla a cabo si ha conseguido los apoyos suficientes.</p>
+                      <h4><%= t("tu_propones.proposals.steps.title_4") %></h4>
+                      <p class="text-justify"><%= t("tu_propones.proposals.steps.paragraph_4") %></p>
                     </div>
                 </div>
                 <div class="row">
@@ -276,19 +276,19 @@
 
         <div class="mt-4">
           <div class="d-md-none">
-              <a class="btn btn-principal w-100 no-underline" href="/proposals">Ir a Propuestas Ciudadanas</a>
+              <a class="btn btn-principal w-100 no-underline" href="/proposals"><%= t("tu_propones.card.button_2") %></a>
           </div>
           <div class="d-md-block d-none text-center">
-              <a class="btn btn-principal no-underline" href="/proposals">Ir a Propuestas Ciudadanas</a>
+              <a class="btn btn-principal no-underline" href="/proposals"><%= t("tu_propones.card.button_2") %></a>
           </div>
         </div>
 
         <div class="row g-5 mt-5 mb-5 mx-0">
           <div class="col-md-6">
-              <h2>¿Cómo participar en las votaciones ciudadanas?</h2>
-              <p class="mt-3 text-justify">Puedes participar en la toma decisiones municipales de forma directa. Cuando una propuesta ciudadana alcanza el 1% de apoyos de las personas mayores de 16 años empadronadas en Torres de Cotillas, o cuando el Ayuntamiento decide abrir ciertas cuestiones a decisión directa de la ciudadanía, se abre una votación ciudadana.</p>
-              <p class="mb-3 text-justify">La posibilidad de votar está activa única y exclusivamente durante el periodo de votación, pudiendo consultar toda la información detallada en cada proceso de <a href="/polls">votación</a> que el Ayuntamiento convoque.</p>
-              <p class="mb-3 text-justify">Accede aquí a <a href="/help" data-turbo-frame="modal_show" data-controller="general" data-action="click->general#showModal" data-general-modal="modalShow">más información sobre votaciones.</a></p>
+              <h2><%= t("tu_propones.polls.title") %></h2>
+              <p class="mt-3 text-justify"><%= t("tu_propones.polls.paragraph_1") %></p>
+              <p class="mb-3 text-justify"><%= t("tu_propones.polls.paragraph_2_1") %> <a href="/polls"><%= t("tu_propones.polls.link_paragraph_2") %></a> <%= t("tu_propones.polls.paragraph_2_2") %></p>
+              <p class="mb-3 text-justify"><%= t("tu_propones.access_here") %> <a href="/help" data-turbo-frame="modal_show" data-controller="general" data-action="click->general#showModal" data-general-modal="modalShow"><%= t("tu_propones.polls.link_text") %></a></p>
           </div>
           <div class="col-md-6 p-0">
               <%= image_tag("calle-torres.jpg", class: "img-fluid radius", alt: "Monumento de un hombre y una mujer.", style: "border-radius: 1rem;") %>
@@ -296,7 +296,7 @@
         </div>
 
          <div class="row d-md-block d-none">
-          <span class="h6">Para participar en una votación ciudadana es necesario:</span>
+          <span class="h6"><%= t("tu_propones.polls.participate") %></span>
           <div class="row flex-row flex-nowrap horizontal-scroll mt-4">
             <div class="col-md-4 col-auto">
                 <div class="row">
@@ -304,8 +304,8 @@
                     <div class="col pt-3"><hr class="orange-line"></div>
                 </div>
                 <div class="row">
-                    <h4>Registrarse</h4>
-                    <p class="text-justify">Para votar es necesario <a href="users/sign_up" data-turbo-frame="modal_show" data-controller="general" data-action="click->general#showModal" data-general-modal="modalShow">registrarse</a> en Decide Torres de Cotillas</p>
+                    <h4><%= t("tu_propones.polls.steps.title_1") %></h4>
+                    <p class="text-justify"><%= t("tu_propones.polls.steps.paragraph_1") %> <a href="users/sign_up" data-turbo-frame="modal_show" data-controller="general" data-action="click->general#showModal" data-general-modal="modalShow"><%= t("tu_propones.debates.step_1_pragraph_2") %></a> <%= t("tu_propones.place") %></p>
                 </div>
             </div>
             <div class="col-md-4 col-auto">
@@ -314,8 +314,8 @@
                     <div class="col pt-3"><hr class="orange-line"></div>
                 </div>
                 <div class="row">
-                    <h4>Verificar la cuenta</h4>
-                    <p class="text-justify">Verifica tu cuenta. De esta forma nos aseguramos de que el proceso es seguro.</p>
+                    <h4><%= t("tu_propones.polls.steps.title_2") %></h4>
+                    <p class="text-justify"><%= t("tu_propones.polls.steps.paragraph_2") %></p>
                 </div>
             </div>
             <div class="col-md-4 col-auto">
@@ -324,22 +324,22 @@
                     <div class="col pt-3"><hr class="orange-line"></div>
                 </div>
                 <div class="row">
-                    <h4>Votar</h4>
-                    <p class="text-justify">Elige tus opciones sobre los temas que se plantean y vota. El voto es secreto.</p>
+                    <h4><%= t("tu_propones.polls.steps.title_3") %></h4>
+                    <p class="text-justify"><%= t("tu_propones.polls.steps.paragraph_3") %></p>
                 </div>
             </div>
           </div>
         </div>
 
         <div class="row d-md-none mx-0">
-          <span class="h6">Para participar en una votación ciudadana es necesario:</span>
+          <span class="h6"><%= t("tu_propones.polls.participate") %></span>
           <div class="row flex-row mt-4">
             <div class="col-12">
                 <div class="row">
                     <div class="col-auto" style="color: #9dcef0; "><h3 style="font-size: 3rem">1</h3></div>
                     <div class="col pt-3">
-                      <h4>Registrarse</h4>
-                      <p class="text-justify">Para votar es necesario <a href="users/sign_up" data-turbo-frame="modal_show" data-controller="general" data-action="click->general#showModal" data-general-modal="modalShow">registrarse</a> en Decide Torres de Cotillas</p>
+                      <h4><%= t("tu_propones.polls.steps.title_1") %></h4>
+                      <p class="text-justify"><%= t("tu_propones.polls.steps.paragraph_1") %> <a href="users/sign_up" data-turbo-frame="modal_show" data-controller="general" data-action="click->general#showModal" data-general-modal="modalShow"><%= t("tu_propones.debates.step_1_pragraph_2") %></a> <%= t("tu_propones.place") %></p>
                     </div>
                 </div>
                 <div class="row">
@@ -350,8 +350,8 @@
                 <div class="row">
                     <div class="col-auto" style="color: #9dcef0; "><h3 style="font-size: 3rem">2</h3></div>
                     <div class="col pt-3">
-                      <h4>Verificar la cuenta</h4>
-                      <p class="text-justify">Verifica tu cuenta. De esta forma nos aseguramos de que el proceso es seguro.</p>
+                      <h4><%= t("tu_propones.polls.steps.title_2") %></h4>
+                      <p class="text-justify"><%= t("tu_propones.polls.steps.paragraph_2") %></p>
                     </div>
                 </div>
                 <div class="row">
@@ -362,8 +362,8 @@
                 <div class="row">
                   <div class="col-auto" style="color: #9dcef0; "><h3 style="font-size: 3rem">3</h3></div>
                     <div class="col pt-3">
-                      <h4>Votar</h4>
-                      <p class="text-justify">Elige tus opciones sobre los temas que se plantean y vota. El voto es secreto.</p>
+                      <h4><%= t("tu_propones.polls.steps.title_3") %></h4>
+                      <p class="text-justify"><%= t("tu_propones.polls.steps.paragraph_3") %></p>
                     </div>
                 </div>
                 <div class="row">
@@ -375,10 +375,10 @@
 
         <div class="my-4">
           <div class="d-md-none">
-              <a class="btn btn-principal w-100 no-underline" href="/polls">Ver todas las votaciones</a>
+              <a class="btn btn-principal w-100 no-underline" href="/polls"><%= t("tu_propones.polls.button") %></a>
           </div>
           <div class="d-md-block d-none text-center">
-              <a class="btn btn-principal no-underline" href="/polls">Ver todas las votaciones</a>
+              <a class="btn btn-principal no-underline" href="/polls"><%= t("tu_propones.polls.button") %></a>
           </div>
         </div>
     </div>
