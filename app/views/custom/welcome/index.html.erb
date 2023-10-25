@@ -16,60 +16,25 @@
         </div>
 
         <div>
-          <h1 class="mb-4">Descubre la plataforma de participación ciudadana del Ayuntamiento de Torres de Cotillas.</h1>
-          <p class="text-justify">En Decide Torres de Cotillas puedes hacer propuestas, votar en consultas ciudadanas, plantear, apoyar o votar proyectos con presupuestos participativos, decidir la normativa municipal y abrir debates para intercambiar opiniones con otras personas.</p>
+          <h1 class="mb-4"><%= t("welcome.home.title")%></h1>
+          <p class="text-justify"><%= t("welcome.home.subtitle")%></p>
 
           <div class="text-center-md">
               <div class="d-none d-md-block ">
                   <p style="margin-top: 2rem">
-                      <a class="btn no-radius btn-principal no-underline" href="/users/sign_up">Regístrate</a>
-                      <a class="btn no-radius btn-secundario no-underline" href="/tu-propones">Ayuda</a>
+                      <a class="btn no-radius btn-principal no-underline" href="/users/sign_up"><%= t("users.signup")%></a>
+                      <a class="btn no-radius btn-secundario no-underline" href="/tu-propones"><%= t("layouts.header.help")%></a>
                   </p>
               </div>
               <div class="d-md-none">
                   <div class="row mx-auto"  style="margin-top: 2rem">
-                      <a class="btn no-radius btn-principal  mb-2 no-underline w-100"  href="/users/sign_up">Regístrate</a>
-                      <a class="btn no-radius btn-secundario  no-underline w-100" href="/tu-propones">Ayuda</a>
+                      <a class="btn no-radius btn-principal  mb-2 no-underline w-100"  href="/users/sign_up"><%= t("users.signup")%></a>
+                      <a class="btn no-radius btn-secundario  no-underline w-100" href="/tu-propones"><%= t("header.help")%></a>
                   </div>
               </div>                
           </div>
         </div>
       </div>
-
-
-
-
-        <div class="row mb-5" hidden>
-            <div class="col-md-6 d-none d-md-block" style="padding-right: 6rem;">
-              <img class="img-fluid rounded" alt="Ilustración de Clara, asistente virtual" src="https://decide.madrid.es/assets/01-Ilustraci%C3%B3n-Clara-(Asistente-virtual)@x2-c28b0e00995699ffbc76039780af8bf4419c30dd9343bbc5329cb448a913ee77.png">
-            </div>
-            <div class="col-12 d-md-none text-center">
-                <img class="img-fluid rounded" alt="Ilustración de Clara, asistente virtual" src="https://decide.madrid.es/assets/01-Ilustraci%C3%B3n-Clara-(Asistente-virtual)@x2-c28b0e00995699ffbc76039780af8bf4419c30dd9343bbc5329cb448a913ee77.png">
-            </div>
-            <div class="col-12 col-md-6 ">
-              <div class="row h-50">
-                    <div class="col-12 ">
-                      <h1 class="mb-4">Descubre la plataforma de participación ciudadana del Ayuntamiento de Torres de Cotillas.</h1>
-                      <p>En Decide Torres de Cotillas puedes hacer propuestas, votar en consultas ciudadanas, plantear, apoyar o votar proyectos con presupuestos participativos, decidir la normativa municipal y abrir debates para intercambiar opiniones con otras personas.</p>
-                      <div class="text-center-md">
-                          <div class="d-none d-md-block ">
-                              <p style="margin-top: 2rem">
-                                  <a class="btn no-radius btn-principal no-underline" href="/users/sign_up">Regístrate</a>
-                                  <a class="btn no-radius btn-secundario no-underline" href="/tu-propones">Ayuda</a>
-                              </p>
-                          </div>
-                          <div class="d-md-none">
-                              <div class="row mx-auto"  style="margin-top: 2rem">
-                                  <a class="btn no-radius btn-principal  mb-2 no-underline w-100"  href="/users/sign_up">Regístrate</a>
-                                  <a class="btn no-radius btn-secundario  no-underline w-100" href="/tu-propones">Ayuda</a>
-                              </div>
-                          </div>                
-                      </div>
-                    </div>
-              </div>
-              
-          </div>
-        </div>
 
         <%= render "layouts/flash" %>
 
@@ -81,14 +46,14 @@
         <div class="py-5">
           <div class="row g-6 mb-5">
             <div class="col-md-4 pr-0" style="padding-right: 0px !important;">
-              <h2>Participa, tú propones.</h2>
-              <p class="fs-6">En este espacio podrás dar ideas y abrir temas de debate.</p>
+              <h2><%= t("welcome.home.title_2")%></h2>
+              <p class="fs-6"><%= t("welcome.home.subtitle_2")%></p>
               <div class="d-flex gap-3 flex-md-row flex-column mb-3" role="tablist">
                   <div class="nav-item" role="presentation">
-                    <button class="nav-link active w-100" id="btnShowDebates pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" style="padding-left: 1rem; padding-right: 1rem" aria-controls="pills-home" aria-selected="true">Debates</button>
+                    <button class="nav-link active w-100" id="btnShowDebates pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" style="padding-left: 1rem; padding-right: 1rem" aria-controls="pills-home" aria-selected="true"><%= t("users.show.debates")%></button>
                   </div>
                   <div class="nav-item flex-grow-1" role="presentation">
-                    <button class="nav-link w-100" id="btnShowProposals pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Propuestas ciudadanas</button>
+                    <button class="nav-link w-100" id="btnShowProposals pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><%= t("proposals.index.title")%></button>
                   </div>
               </div>
               <div class="mt-5 d-none d-md-block" style="height: 38rem">
@@ -108,12 +73,12 @@
                       <% end %>
 
                       <div class="debatesButton col-8 col-md-3">
-                        <a class="btn btn-principal no-radius no-underline w-100" href="/debates">Ir a debates</a>
+                        <a class="btn btn-principal no-radius no-underline w-100" href="/debates"><%= t("welcome.home.button_debates") %></a>
                       </div>
                     </div>
                     <div class="carousel-inner">
                       <div class="row ps-3" style="margin-bottom: -1rem;">
-                                <h3>Debates</h3>
+                                <h3><%= t("users.show.debates")%></h3>
                       </div>
                       <% debate_groups.each_with_index do |debate_group, index| %>
                           <div class="carousel-item <%= index.zero? ? 'active' : '' %>">
@@ -125,7 +90,7 @@
                                       <img class="img-fluid rounded" alt="Una joven consulta información en un portátil, sentada en una mesa de una biblioteca" src="https://decide.madrid.es/assets/welcome/Participa-998351bff8be28bace608710513573266f1d022a696e02a44d7cf7e8fe158b45.jpg">
                                     </div>
                                     <strong>
-                                    <a class="" style="" href="/tu-propones">¿Cómo funcionan?</a>
+                                    <a class="" style="" href="/tu-propones"><%= t("welcome.home.card") %></a>
                                     </strong>
                                   </div>
                                 </div>
@@ -155,10 +120,18 @@
                                           </div>
                                           <div class="row">
                                               <div class="col">
-                                                  <span class="percentage"><%= ((debate.likes / debate.total_votes) * 100) %>%</span>
+                                                  <% if debate.total_votes > 0 %>
+                                                    <span class="percentage"><%= ((debate.likes / debate.total_votes) * 100) %>%</span>
+                                                  <% else %>
+                                                    <span class="percentage">0</span>
+                                                  <% end %>
                                               </div>
                                               <div class="col">
-                                                  <span class="percentage"><%= ((debate.dislikes / debate.total_votes) * 100) %>%</span>
+                                                  <% if debate.total_votes > 0 %>
+                                                    <span class="percentage"><%= ((debate.dislikes / debate.total_votes) * 100) %>%</span>
+                                                  <% else %>
+                                                    <span class="percentage">0</span>
+                                                  <% end %>
                                               </div>
                                           </div>  
                                         </div>
@@ -169,7 +142,7 @@
                                             <p class="card-subtitle"><%= strip_tags(debate.description) %></p>
                                           </div>
                                       </div>
-                                      <a class="btn btn-secundario no-radius no-underline" style="padding-top: 0.5rem; padding-bottom: 0.5rem" href="">Ver Debate</a>
+                                      <a class="btn btn-secundario no-radius no-underline" style="padding-top: 0.5rem; padding-bottom: 0.5rem" href=""><%= t("debates.edit.show_link") %></a>
                                     </div>
                                   </div>
                                 </div>
@@ -190,12 +163,12 @@
                       <% end %>
 
                       <div class="debatesButton col-8 col-md-3">
-                        <a class="btn btn-principal no-radius no-underline w-100" href="/proposals">Ir a propuestas</a>
+                        <a class="btn btn-principal no-radius no-underline w-100" href="/proposals"><%= t("welcome.home.button_proposals") %></a>
                       </div>
                     </div>
                     <div class="carousel-inner">
                     <div class="row ps-3" style="margin-bottom: -1rem;">
-                                <h3>Propuestas</h3>
+                                <h3><%= t("proposals.index.title")%></h3>
                       </div>
                       <% proposals_group.each_with_index do |proposals_group, index| %>
                           <div class="carousel-item <%= index.zero? ? 'active' : '' %>">
@@ -207,7 +180,7 @@
                                       <img class="img-fluid rounded" alt="Una joven consulta información en un portátil, sentada en una mesa de una biblioteca" src="https://decide.madrid.es/assets/welcome/participa_prop-f0d58a2be7bba27f9aa56f06455d162dc098849538f4fae9ec356d71040e5ee5.jpg">
                                     </div>
                                     <strong>
-                                    <a class="" style="" href="/tu-propones">¿Cómo funcionan?</a>
+                                    <a class="" style="" href="/tu-propones"><%= t("welcome.home.card") %></a>
                                     </strong>
                                   </div>
                                 </div>
@@ -240,7 +213,7 @@
                                         </span>
                                         </div>
                                         <div class="col">
-                                          <a class="btn btn-secundario no-radius w-100 no-underline" style="padding-top: 0.5rem; padding-bottom: 0.5rem" href="">Ver Propuesta</a>
+                                          <a class="btn btn-secundario no-radius w-100 no-underline" style="padding-top: 0.5rem; padding-bottom: 0.5rem" href=""><%= t("layout.dashboard.proposal_totals.show_proposals") %></a>
                                         </div>
                                       </div>
                                     </div>
