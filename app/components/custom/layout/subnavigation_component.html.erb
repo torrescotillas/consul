@@ -11,6 +11,13 @@
         </div>
 <% end %>
 
+        <div>
+          <%= layout_menu_link_to t("Tú Propones"),
+                                          tu_propones_path,
+                                          controller_name == "welcome",
+                                          accesskey: "1" %>
+        </div>
+
 <% if feature?(:proposals) %>
         <div>
                 <%= layout_menu_link_to t("layouts.header.proposals"),
@@ -28,17 +35,6 @@
                                           accesskey: "3" %>
         </div>
 <% end %>
-
-
-<% if feature?(:sdg) %>
-        <div>
-                <%= layout_menu_link_to t("layouts.header.sdg"),
-                                        sdg_goals_path,
-                                        controller_path == "sdg/goals" && action_name != "help",
-                                        accesskey: "6" %>
-        </div>
-<% end %>
-
 
 <% if feature?(:help_page) %>
         <div>

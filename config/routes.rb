@@ -29,6 +29,7 @@ Rails.application.routes.draw do
 
   root "welcome#index"
   get "/welcome", to: "welcome#welcome"
+  get "/tu-propones", to: "welcome#indexTuPropones"
   get "/consul.json", to: "installation#details"
   get "robots.txt", to: "robots#index"
 

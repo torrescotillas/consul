@@ -3,6 +3,195 @@
 // You can also create SCSS files in the app/assets/stylesheets/custom/
 // folder and they will be loaded automatically.
 
+
+//////////////////////////
+// Tu propones          //
+//////////////////////////
+
+
+.block-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .button-fixed {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.button-container {
+  position: relative;
+}
+
+.button-fixed {
+  position: absolute;
+  bottom: 0;
+  width: 93% ;
+  margin-bottom: 1rem !important;
+}
+
+.orange-line {
+  border: 0.05rem solid #f95f1f;
+}
+
+.imgSize {
+  width: 300px;
+}
+
+.grey-background {
+  background-color: #f9f9f9;
+}
+
+//////////////////////////
+// Home                 //
+//////////////////////////
+
+@media (max-width: 767px) {
+  .debatesButton {
+    margin-top: 50px;
+    width: 103%;
+    right: -15px !important;
+  }
+
+  .carousel-inner {
+    margin-left: 10px ;
+  }
+
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.no-underline:hover {
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.debatesButton {
+  right: 0;
+  position: absolute;
+}
+
+#carouselExampleIndicators {
+  height: 100%;
+}
+
+#carouselExampleIndicators2 {
+  height: 100%;
+}
+
+a:active, a:focus:active, button:active, button:focus:active, [type="button"]:active, [type="button"]:focus:active, [type="submit"]:active, [type="submit"]:focus:active {
+  outline: none !important; 
+}
+
+.carousel-indicators [data-bs-target]:hover {
+  height: 20px !important;
+  width: 20px !important;
+  }
+  
+  .carousel-indicators [data-bs-target] {
+  height: 20px !important;
+  width: 20px !important;
+  background-color: #008b95 !important; 
+}
+
+.carousel-indicators {
+  margin-bottom: -2rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+
+.btn-secundario:hover, .btn-secundario:focus {
+  padding: 1rem 2rem;
+  color: black;
+  font-weight: bold;
+  background: white;
+  border-radius: 0.5rem !important;
+  border: 0.1rem solid #00C0C8;
+}
+
+.btn-secundario {
+  padding: 1rem 2rem;
+  color: black;
+  background: white;
+  border: 0.1rem solid grey;
+  border-radius: 0.5rem !important;
+}
+
+.carousel-inner {
+  overflow: hidden !important;
+  margin-left: 0px;
+}
+
+#cardWelcome {
+  border-color: #e6b0ff !important;
+}
+
+.circulo {
+  width: 20px; 
+  height: 20px; 
+  background-color: #008b95 !important; 
+  border-radius: 50%; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+
+}
+
+.circulo:hover {
+  background-color: #025c62 !important; 
+}
+
+.fixed-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-item .nav-link.active {
+  padding: 1rem;
+  color: black;
+  background: #008b95;
+  border: 0.1rem solid #008b95;
+  border-radius: 0.5rem ;
+}
+
+.nav-item .nav-link {
+  border: 0.1rem solid #008b95;
+  color: #000000;
+  background: #ffffff ;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 0px 30px;
+}
+
+.btn-principal {
+  padding: 1rem 2rem;
+  color: black;
+  background: #008b95;
+  border: 0.1rem solid #008b95;
+  border-radius: 0.5rem !important;
+}
+
+.btn-principal:hover, .btn-principal:focus {
+  padding: 1rem 2rem;
+  color: black;
+  font-weight: bold;
+  background: #00C0C8;
+  border-radius: 0.5rem !important;
+  border: 0.1rem solid #00C0C8;
+}
+
+//////////////////////////
+
 .footer-title {
     font-weight: 700;
     font-size: 18px;
@@ -1030,7 +1219,7 @@
   #div-icons-social a {
     max-width: 70px;
   }
-  
+
   /**
    * @file
    * Estilos responsive lastorresdecotillas
@@ -1352,6 +1541,6 @@
   }
   
   .logo-header img {
-    width: 140px;
+    width: 40px;
   }
   
