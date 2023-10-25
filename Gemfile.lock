@@ -270,10 +270,6 @@ GEM
       rexml (~> 3.0)
     hashie (5.0.0)
     highline (2.0.3)
-    hotwire-rails (0.1.3)
-      rails (>= 6.0.0)
-      stimulus-rails
-      turbo-rails
     htmlentities (4.3.4)
     httparty (0.21.0)
       mini_mime (>= 1.0.0)
@@ -615,8 +611,6 @@ GEM
     sshkit (1.21.2)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
-    stimulus-rails (1.3.0)
-      railties (>= 6.0.0)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
     terrapin (0.6.0)
@@ -627,10 +621,6 @@ GEM
     thread_safe (0.3.6)
     tilt (2.0.10)
     tomlrb (1.3.0)
-    turbo-rails (1.5.0)
-      actionpack (>= 6.0.0)
-      activejob (>= 6.0.0)
-      railties (>= 6.0.0)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -724,7 +714,6 @@ DEPENDENCIES
   graphiql-rails (~> 1.8.0)
   graphql (~> 1.12.14)
   groupdate (~> 6.1.0)
-  hotwire-rails
   i18n-tasks (~> 0.9.37)
   image_processing (~> 1.12.2)
   initialjs-rails (~> 0.2.0.9)
