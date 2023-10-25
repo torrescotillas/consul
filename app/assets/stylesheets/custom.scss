@@ -37,11 +37,11 @@
 }
 
 .imgSize {
-  width: 300px;
+  width: 300px !important;
 }
 
 .grey-background {
-  background-color: #f9f9f9;
+  background-color: #f9f9f9 !important;
 }
 
 //////////////////////////
@@ -62,18 +62,19 @@
 }
 
 .no-underline {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .no-underline:hover {
   text-decoration: none;
 }
 
-.card {
+.card.cardHome {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100% ;
 }
+
 
 .debatesButton {
   right: 0;
@@ -129,7 +130,6 @@ a:active, a:focus:active, button:active, button:focus:active, [type="button"]:ac
 
 .carousel-inner {
   overflow: hidden !important;
-  margin-left: 0px;
 }
 
 #cardWelcome {
