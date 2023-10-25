@@ -110,7 +110,7 @@ a:active, a:focus:active, button:active, button:focus:active, [type="button"]:ac
 }
 
 
-.btn-secundario:hover, .btn-secundario:focus {
+.btn.btn-secundario:hover, .btn.btn-secundario:focus {
   padding: 1rem 2rem;
   color: black;
   font-weight: bold;
@@ -119,7 +119,7 @@ a:active, a:focus:active, button:active, button:focus:active, [type="button"]:ac
   border: 0.1rem solid #00C0C8;
 }
 
-.btn-secundario {
+.btn.btn-secundario {
   padding: 1rem 2rem;
   color: black;
   background: white;
@@ -173,7 +173,7 @@ a:active, a:focus:active, button:active, button:focus:active, [type="button"]:ac
   border-radius: 0px 30px;
 }
 
-.btn-principal {
+.btn.btn-principal {
   padding: 1rem 2rem;
   color: black;
   background: #008b95;
@@ -181,7 +181,7 @@ a:active, a:focus:active, button:active, button:focus:active, [type="button"]:ac
   border-radius: 0.5rem !important;
 }
 
-.btn-principal:hover, .btn-principal:focus {
+.btn.btn-principal:hover, .btn.btn-principal:focus {
   padding: 1rem 2rem;
   color: black;
   font-weight: bold;
