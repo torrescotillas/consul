@@ -818,7 +818,7 @@ es:
     login_to_comment: "Necesitas %{signin} o %{signup} para comentar."
     login_to_continue: "Necesitas %{signin} o %{signup} para continuar."
     signin: "iniciar sesión"
-    signup: "registrarte"
+    signup: "Registrarte"
     verify_account: "verifica tu cuenta"
     direct_messages:
       new:
@@ -884,6 +884,14 @@ es:
         one: "Sólo puedes apoyar proyectos de gasto de %{count} distrito. Ya has apoyado en %{supported_headings}."
         other: "Sólo puedes apoyar proyectos de gasto de %{count} distritos. Ya has apoyado en %{supported_headings}."
   welcome:
+    home:
+      title: Descubre la plataforma de participación ciudadana del Ayuntamiento de Torres de Cotillas.
+      subtitle: En Decide Torres de Cotillas puedes hacer propuestas, votar en consultas ciudadanas, plantear, apoyar o votar proyectos con presupuestos participativos, decidir la normativa municipal y abrir debates para intercambiar opiniones con otras personas.
+      title_2: Participa, tú propones.
+      subtitle_2: En este espacio podrás dar ideas y abrir temas de debate.
+      button_debates: Ir a debates
+      button_proposals: Ir a propuestas
+      card: ¿Cómo funcionan?
     feed:
       most_active:
         debates: "Debates más activos"

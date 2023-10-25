@@ -815,8 +815,8 @@ en:
   users:
     login_to_comment: "You must %{signin} or %{signup} to leave a comment."
     login_to_continue: "You must %{signin} or %{signup} to continue."
-    signin: "sign in"
-    signup: "sign up"
+    signin: "Sign in"
+    signup: "Sign up"
     verify_account: "verify your account"
     direct_messages:
       new:
@@ -882,6 +882,14 @@ en:
         one: "You can only support investment projects in %{count} district. You have already supported investments in %{supported_headings}."
         other: "You can only support investment projects in %{count} districts. You have already supported investments in %{supported_headings}."
   welcome:
+    home:
+        title: Discover the citizen participation platform of the City Council of Torres de Cotillas.
+        subtitle: In Decide Torres de Cotillas, you can make proposals, vote in citizen consultations, submit, support, or vote on projects with participatory budgets, influence municipal regulations, and open discussions to exchange opinions with others.
+        title_2: Participate, you propose.
+        subtitle_2: In this space, you can provide ideas and initiate discussion topics..
+        button_debates: Go to discussions
+        button_proposals: Go to proposals
+        card: How do they work?
     feed:
       most_active:
         debates: "Most active debates"
