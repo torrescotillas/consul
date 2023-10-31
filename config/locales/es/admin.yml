@@ -834,7 +834,7 @@ es:
         empty_newsletters: No hay newsletters para mostrar
       new:
         title: Nueva newsletter
-        header_footer_help_text: "El encabezado y pie son los mismos en todos los emails, puedes modificarlos en <code>app/views/layouts/mailer_header</code> y <code>app/views/layouts/mailer_footer</code>.<br>Puedes reemplazar la imagen del encabezado en %{link}."
+        header_footer_help_text: "El encabezado y pie son los mismos en todos los emails, puedes modificarlos en <code>app/views/layouts/mailer_header</code> y <code>app/views/layouts/mailer_footer</code>.<br>"
         image_link: "personalizar imágenes"
       edit:
         title: Editar newsletter
