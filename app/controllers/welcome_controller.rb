@@ -14,7 +14,7 @@ class WelcomeController < ApplicationController
 
     # Obtén los 8 debates limitados
     @limited_debates = Debate.limit(5)
-    @limited_proposals = Proposal.where.not(published_at: nil).limit(5).order(id: :asc)
+    @limited_proposals = Proposal.where.not(published_at: nil, selected: true).where(hidden_at: nil).limit(5).order(id: :asc)
 
     
     user_agent = request.user_agent.downcase

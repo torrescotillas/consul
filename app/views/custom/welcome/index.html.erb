@@ -142,7 +142,7 @@
                                             <p class="card-subtitle"><%= strip_tags(debate.description) %></p>
                                           </div>
                                       </div>
-                                      <a class="btn btn-secundario no-radius no-underline" style="padding-top: 0.5rem; padding-bottom: 0.5rem" href=""><%= t("debates.edit.show_link") %></a>
+                                      <a class="btn btn-secundario no-radius no-underline" style="padding-top: 0.5rem; padding-bottom: 0.5rem" href="/debates"><%= t("debates.edit.show_link") %></a>
                                     </div>
                                   </div>
                                 </div>
@@ -197,23 +197,21 @@
                                           <span class="h6 card-subtitle text-muted uppercase"><%= formatted_date %> - <%= proposal.author.username %>  </span>
                                         </div>
                                       </div>
-                                      <div style="height: 10rem;">
-                                        <div class="row">
-                                          <span class="h5 card-tittle"><%= proposal.title %></span>
-                                        </div>
-                                        <div class="row mb-3">
+                                      <div style="height: 10rem; overflow: clip;" class="mb-3">
+                                          <h3 class="big-text blue-text bold"><%= proposal.title %></h3>
+                                          <div class="mt-4 mb-4">
                                             <p class="card-subtitle"><%= strip_tags(proposal.description) %></p>
-                                        </div>
+                                          </div>
                                       </div>
                                       <div class="row g-3">
-                                        <div class="col">
-                                        <span>
-                                          <span class="bolder"><%= proposal.cached_votes_up %> apoyos</span>
-                                          <span class="text-muted"></span>
-                                        </span>
+                                        <div class="col-4">
+                                          <span>
+                                            <span class="bolder"><%= proposal.cached_votes_up %> apoyos</span>
+                                            <span class="text-muted"></span>
+                                          </span>
                                         </div>
-                                        <div class="col">
-                                          <a class="btn btn-secundario no-radius w-100 no-underline" style="padding-top: 0.5rem; padding-bottom: 0.5rem" href=""><%= t("layouts.dashboard.proposal_totals.show_proposal") %></a>
+                                        <div class="col-8">
+                                          <a class="btn btn-secundario no-radius w-100 no-underline" style="padding-top: 0.5rem; padding-bottom: 0.5rem" href="/proposals"><%= t("layouts.dashboard.proposal_totals.show_proposal") %></a>
                                         </div>
                                       </div>
                                     </div>
@@ -227,7 +225,7 @@
                   </div>
                 </div>
               </div>
-              
+
             </div>
         </div>
       </div>    
