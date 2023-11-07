@@ -301,7 +301,7 @@ a:active, a:focus:active, button:active, button:focus:active, [type="button"]:ac
   }
   #text-feder-2 {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    color: #82a0c1;
+    color: black;
     font-size: 18px;
     text-align: center;
   }
@@ -952,8 +952,8 @@ a:active, a:focus:active, button:active, button:focus:active, [type="button"]:ac
     padding-right: 2vh;
   }
   #block-footer {
-    width: 99%;
-    margin: 20px 0;
+    max-width: 1300px;
+    margin: 30px 6%;
   }
   .footer-links a {
     text-decoration: none;
