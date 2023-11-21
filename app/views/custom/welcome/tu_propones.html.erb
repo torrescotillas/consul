@@ -15,7 +15,8 @@
             <div class="card cardHome grey-background" id="debates-card">
               <div class="card-body button-container">
                   <div class="row mt-4 mb-4 justify-content-center mx-auto">
-                      <img class="rounded imgSize" alt="Ilustración de sección debates, un hombre y una mujer debatiendo" src="https://decide.madrid.es/assets/03-Ilustraci%C3%B3n-secci%C3%B3n-debates@x2-d51802f5153ed636aa594c5b1cc939aa2a069e88a1525691cf14a1a3a1601278.png">
+                         <%= image_tag(image_path_for("debates-card.png"), class: "rounded imgSize") %>
+
                   </div>
                   <h3 class="text-center blue-text"><%= t("tu_propones.card.title_1") %></h3>
                   <p class="mt-4 mb-5 text-center"><%= t("tu_propones.card.subtitle_1") %></p>
@@ -28,7 +29,8 @@
             <div class="card cardHome grey-background" id="debates-card">
                   <div class="card-body">
                       <div class="row mt-4 mb-4 justify-content-center">
-                          <img class=" rounded imgSize" alt="Ilustración de sección debates, un hombre y una mujer debatiendo" src="https://decide.madrid.es/assets/04-Ilustraci%C3%B3n-secci%C3%B3n-propuestas-ciudadanas@x2-9b74236e0f334ef42c9fe15908ffb57ec0c00c9ff8e89e0ac7280bb6dfbe7341.png">
+                         <%= image_tag(image_path_for("propuestas-card.png"), class: "rounded imgSize") %>
+
                       </div>
                       <h3 class="text-center blue-text"><%= t("tu_propones.card.title_2") %></h3>
                       <p class="mt-4 mb-5 text-center"><%= t("tu_propones.card.subtitle_2") %></p>
