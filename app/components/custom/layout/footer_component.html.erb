@@ -76,20 +76,29 @@
                         <%= image_tag("logo-footer.svg", width: '60', height: '105', id: 'logo-footer') %>
                         </a>
                     </div>
-                    <div id="div-icons-social">
-                        <a href="https://www.facebook.com/ayuntamientolastorresdecotillas/" target="_blank">
-                            <%= image_tag("RRSS_FB.svg",class:'icon', width: '46', height: '46') %>
-                        </a>
-                        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FAytoLasTorresC" target="_blank">
-                            <%= image_tag("RRSS_tw.svg",class:'icon', width: '46', height: '46') %>
-                        </a>
-                        <a href="https://www.instagram.com/aytolastorresdecotillas/" target="_blank">
-                            <%= image_tag("RRSS_IG.svg",class:'icon', width: '46', height: '46') %>
-                        </a>
-                        <a href="https://api.whatsapp.com/send/?phone=34968626511&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank">
-                            <%= image_tag("RRSS_WA.svg",class:'icon', width: '46', height: '46') %>
-                        </a>
+                    <div class="rrss-block">
+                        <div id="div-icons-social">
+                            <a href="https://www.facebook.com/ayuntamientolastorresdecotillas/" target="_blank">
+                                <%= image_tag("RRSS_FB.svg",class:'icon', width: '46', height: '46') %>
+                            </a>
+                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FAytoLasTorresC" target="_blank">
+                                <%= image_tag("RRSS_tw.svg",class:'icon', width: '46', height: '46') %>
+                            </a>
+                            <a href="https://www.instagram.com/aytolastorresdecotillas/" target="_blank">
+                                <%= image_tag("RRSS_IG.svg",class:'icon', width: '46', height: '46') %>
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=34968626511&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank">
+                                <%= image_tag("RRSS_WA.svg",class:'icon', width: '46', height: '46') %>
+                            </a>
+                        </div>
+                        <div id="div-text-feder">
+                            <div id="text-footer-title">
+                                <span class="col-6" id="text-feder"><%= t('layouts.footer.european_regional_development_fund') %></span>
+                                <span id="text-feder-2"><%= t('layouts.footer.a_way_of_doing_europe') %></span>
+                            </div>
+                        </div>
                     </div>
+                    
                     <div class="col-3" id="div-img-footer-europe">
                         <a>
                             <%= image_tag("logo-feder.svg",id:'img-feder', width: '119', height: '92') %>
@@ -105,12 +114,6 @@
                         <div
                             class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
                             <div id="footer-privacidad">
-                                <div id="div-text-feder">
-                                    <div id="text-footer-title">
-                                        <span class="col-6" id="text-feder"><%= t('layouts.footer.european_regional_development_fund') %></span>
-                                        <span id="text-feder-2"><%= t('layouts.footer.a_way_of_doing_europe') %></span>
-                                    </div>
-                                </div>
                                 <hr>
                                 <div id="container-links-footer">
                                     <div id="links-footer">

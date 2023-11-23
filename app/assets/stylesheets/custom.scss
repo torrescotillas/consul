@@ -323,9 +323,13 @@ a:active, a:focus:active, button:active, button:focus:active, [type="button"]:ac
     text-align: end;
     gap: 60px;
     justify-content: center;
+    padding-top: 5%;
   }
   .site-footer {
     padding: 35px 0 30px;
+  }
+  .rrss-block {
+    width: auto;
   }
   
   @media only screen and (max-width: 979px) {
@@ -972,9 +976,6 @@ a:active, a:focus:active, button:active, button:focus:active, [type="button"]:ac
   #div-img-footer-cotillas {
     width: 10%;
   }
-  #img-feder {
-    width: 100%;
-  }
   
   /* Estilos main */
   .breadcrumb-item a {
@@ -1207,13 +1208,13 @@ a:active, a:focus:active, button:active, button:focus:active, [type="button"]:ac
   #container-logos-rrss {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
   
   #div-icons-social {
     display: flex;
     justify-content: space-between;
     padding-top: 65px;
-    width: 251px;
   }
   
   #div-icons-social a {
@@ -1488,6 +1489,16 @@ a:active, a:focus:active, button:active, button:focus:active, [type="button"]:ac
     #img-feder img {
       width: 40%;
     }
+    #container-logos-rrss {
+      flex-direction: column;
+      align-items: center;
+    }
+    #div-icons-social {
+      justify-content: space-around;
+    }
+    .rrss-block {
+      width: 80%;
+    }
     /* PÃ¡gina historia */
     /* Imagenes */
     .field--name-field-imagen-interior img {
@@ -1517,6 +1528,8 @@ a:active, a:focus:active, button:active, button:focus:active, [type="button"]:ac
       left: 43%;
       font-size: 50px;
     }
+
+
   }
   
   @media only screen and (min-width: 979px) {
