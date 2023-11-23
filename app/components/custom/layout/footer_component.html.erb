@@ -18,27 +18,27 @@
                                         <%= t('layouts.footer.of_torres_cotillas') %> <span class="subrayado">.</span>
                                     </p>
                                     <p class="footer-links first-element align-items-center">
-                                        <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-04/map-pin.svg"
-                                            alt="map pin" width="35" height="35">Plaza Adolfo Suárez, ·
+                                     <%= image_tag("map-pin.svg", width: '35', height: '35') %>
+                                        Plaza Adolfo Suárez, ·
                                         30565&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <br>
                                         - Las Torres de Cotillas (Murcia)
                                     </p>
                                     <p class="footer-links align-items-center">
-                                        <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-04/click.svg"
-                                            alt="clic" width="35" height="35"><%= t('layouts.footer.instance') %>
+                                     <%= image_tag("click.svg", width: '35', height: '35') %>
+                                     <%= t('layouts.footer.instance') %>
                                     </p>
                                     <p class="footer-links align-items-center">
-                                        <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-04/mail.svg"
-                                            alt="mail" width="35" height="35">ayuntamiento@lastorresdecotillas.es
+                                        <%= image_tag("mail_footer.svg", width: '35', height: '35') %>
+                                        ayuntamiento@lastorresdecotillas.es
                                     </p>
                                     <p class="footer-links align-items-center">
-                                        <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-04/phone.svg"
-                                            alt="phone" width="35" height="35">968626511
+                                        <%= image_tag("phone_footer.svg", width: '35', height: '35') %>
+                                        968626511
                                     </p>
                                     <p class="footer-links align-items-center">
-                                        <img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-04/clock.svg"
-                                            alt="clock" width="35" height="35"><%= t('layouts.footer.schedule') %>
+                                        <%= image_tag("clock.svg", width: '35', height: '35') %>
+                                        <%= t('layouts.footer.schedule') %>
                                     </p>
                                 </div>
                                 <div class="col-md-4">
@@ -72,29 +72,28 @@
             <section class="row justify-content-center">
                 <div id="container-logos-rrss">
                     <div class="col-3" id="div-img-footer-cotillas">
-                        <a><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-04/logo-footer.svg"
-                                alt="logo footer" width="60" height="105" id="logo-footer"></a>
+                        <a>
+                        <%= image_tag("logo-footer.svg", width: '60', height: '105', id: 'logo-footer') %>
+                        </a>
                     </div>
                     <div id="div-icons-social">
-                        <a href="https://www.facebook.com/ayuntamientolastorresdecotillas/" target="_blank"><img
-                                class="icon"
-                                src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/RRSS_FB.svg"
-                                alt="fb" width="46" height="46"></a><a
-                            href="https://twitter.com/i/flow/login?redirect_after_login=%2FAytoLasTorresC"
-                            target="_blank"><img class="icon"
-                                src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/RRSS_tw.svg"
-                                alt="tw" width="46" height="46"></a><a
-                            href="https://www.instagram.com/aytolastorresdecotillas/" target="_blank"><img class="icon"
-                                src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/RRSS_IG.svg"
-                                alt="ig" width="46" height="46"></a><a
-                            href="https://api.whatsapp.com/send/?phone=34968626511&amp;text&amp;type=phone_number&amp;app_absent=0"
-                            target="_blank"><img class="icon"
-                                src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/RRSS_WA.svg"
-                                alt="wa" width="46" height="46"></a>
+                        <a href="https://www.facebook.com/ayuntamientolastorresdecotillas/" target="_blank">
+                            <%= image_tag("RRSS_FB.svg",class:'icon', width: '46', height: '46') %>
+                        </a>
+                        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FAytoLasTorresC" target="_blank">
+                            <%= image_tag("RRSS_tw.svg",class:'icon', width: '46', height: '46') %>
+                        </a>
+                        <a href="https://www.instagram.com/aytolastorresdecotillas/" target="_blank">
+                            <%= image_tag("RRSS_IG.svg",class:'icon', width: '46', height: '46') %>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=34968626511&amp;text&amp;type=phone_number&amp;app_absent=0" target="_blank">
+                            <%= image_tag("RRSS_WA.svg",class:'icon', width: '46', height: '46') %>
+                        </a>
                     </div>
                     <div class="col-3" id="div-img-footer-europe">
-                        <a><img src="https://lastorresdecotillas.ticsmart.eu/sites/default/files/2023-05/logo-feder.svg"
-                                alt="logo feder" width="119" height="92" id="iåmg-feder"></a>
+                        <a>
+                            <%= image_tag("logo-feder.svg",id:'img-feder', width: '119', height: '92') %>
+                        </a>
                     </div>
                 </div>
             </section>
