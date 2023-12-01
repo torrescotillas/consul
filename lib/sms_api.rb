@@ -25,7 +25,7 @@ class SMSApi
     user = ENV['USER_TELKIA']
     pw = ENV['PW_TELKIA']
     snr = 'AytCotillas'
-    msg = "Clave para verificarte: #{code}. Participación Ciudadana."
+    msg = "Clave para verificarte: #{code}. Participacion Ciudadana."
 
     response = HTTParty.get(url, query: {
       user: user,
