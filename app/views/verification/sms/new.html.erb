@@ -20,6 +20,7 @@
     <%= back_link_to account_path, t("verification.back") %>
 
     <h1><%= t("verification.sms.new.title") %></h1>
+    
 
     <%= form_for @sms, as: "sms", url: sms_path do |f| %>
       <%= render "shared/errors", resource: @sms %>

@@ -1,4 +1,6 @@
 require "open-uri"
+require "httparty"
+require "nokogiri"
 class SMSApi
   attr_accessor :client
 
@@ -19,7 +21,21 @@ class SMSApi
   def sms_deliver(phone, code)
     return stubbed_response unless end_point_available?
 
-    response = client.call(:enviar_sms_simples, message: request(phone, code))
+    url = 'http://sms.smsbroker.net:11000/api/sendSMS.php'
+    user = ENV['USER_TELKIA']
+    pw = ENV['PW_TELKIA']
+    snr = 'AytCotillas'
+    msg = "Clave para verificarte: #{code}. Participación Ciudadana."
+
+    response = HTTParty.get(url, query: {
+      user: user,
+      pw: pw,
+      dnr: phone,
+      snr: snr,
+      msg: msg,
+      test: 0
+    })
+
     success?(response)
   end
 
@@ -31,11 +47,19 @@ class SMSApi
   end
 
   def success?(response)
-    response.body[:respuesta_sms][:respuesta_servicio_externo][:texto_respuesta] == "Success"
+
+    # Parsear el XML usando Nokogiri
+    doc = Nokogiri::XML(response.body)
+
+    # Extraer el valor de 'status'
+    status = doc.at_xpath('//status').text
+
+    status == 'OK'
+    
   end
 
   def end_point_available?
-    Rails.env.staging? || Rails.env.preproduction? || Rails.env.production?
+    Rails.env.staging? || Rails.env.preproduction? || Rails.env.production? || Rails.env.development?
   end
 
   def stubbed_response

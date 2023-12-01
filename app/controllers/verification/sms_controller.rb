@@ -9,15 +9,22 @@ class Verification::SmsController < ApplicationController
 
   def new
     @sms = Verification::Sms.new(phone: params[:phone])
-  end
+  end 
 
   def create
-    @sms = Verification::Sms.new(phone: @phone, user: current_user)
-    if @sms.save
-      redirect_to edit_sms_path, notice: t("verification.sms.create.flash.success")
+    if valid_phone_number?(@phone)
+      @sms = Verification::Sms.new(phone: @phone, user: current_user)
+      if @sms.save
+        redirect_to edit_sms_path, notice: t("verification.sms.create.flash.success")
+      else
+        render :new
+      end
     else
+      flash.now[:error] = "El número de telefono introducido no es válido."
+      @sms = Verification::Sms.new(phone: params[:phone])
       render :new
     end
+  
   end
 
   def edit
@@ -39,6 +46,14 @@ class Verification::SmsController < ApplicationController
       @error = t("verification.sms.update.error")
       render :edit
     end
+  end
+
+  def valid_phone_number?(phone)
+    # Expresión regular para validar un número de teléfono (modificar según el formato deseado)
+    phone_regex = /\A(\+34|34)?[6-7]\d{8}\z/
+    
+    # Verificar si el número coincide con la expresión regular
+    phone =~ phone_regex
   end
 
   private
