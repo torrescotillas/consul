@@ -21,12 +21,12 @@ class SMSApi
   def sms_deliver(phone, code)
     return stubbed_response unless end_point_available?
 
-    url = 'http://sms.smsbroker.net:11000/api/sendSMS.php'
-    user = ENV['USER_TELKIA']
-    pw = ENV['PW_TELKIA']
+    url = Tenant.current_secrets.sms_end_point
+    user = Tenant.current_secrets.sms_username
+    pw =  Tenant.current_secrets.sms_password
     snr = 'AytCotillas'
     msg = "Clave para verificarte: #{code}. Participacion Ciudadana."
-
+    
     response = HTTParty.get(url, query: {
       user: user,
       pw: pw,
